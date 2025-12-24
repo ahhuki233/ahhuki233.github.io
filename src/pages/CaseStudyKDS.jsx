@@ -27,7 +27,7 @@ const CaseStudyKDS = () => {
                 Kitchen Display System
               </h1>
               <p className="case-study-subtitle">
-                A comprehensive kitchen management solution that streamlines restaurant operations through intuitive real-time order tracking, efficient workflow management, and seamless integration with existing POS systems.
+               A comprehensive kitchen display system that allows chefs to manage order status using a physical bump bar, provides a real-time pickup screen for customers, and includes an internal configuration tool for restaurant teams to customize kitchen settings.
               </p>
             </div>
 
@@ -38,19 +38,19 @@ const CaseStudyKDS = () => {
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Timeline</dt>
-                <dd className="meta-value">16 Weeks (May-Aug 2025)</dd>
+                <dd className="meta-value">9 Months (Jan-Oct 2025)</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Team</dt>
-                <dd className="meta-value">Team of 4 developers</dd>
+                <dd className="meta-value">Client Team, Management Team, Front-end & Back-end Developers</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
-                <dd className="meta-value">Designer & Frontend Developer</dd>
+                <dd className="meta-value">Lead Designer & Frontend Developer</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Technologies</dt>
-                <dd className="meta-value">.NET 8, React, UI/UX Design</dd>
+                <dd className="meta-value">.NET 8, React, UI/UX Design, Figma</dd>
               </div>
             </dl>
 
@@ -77,21 +77,21 @@ const CaseStudyKDS = () => {
             <div className="glance-item">
               <h3 className="glance-title">The Problem</h3>
               <p className="glance-text">
-                Restaurant kitchens struggle with paper ticket systems that lead to miscommunication, lost orders, and inefficient workflows. Kitchen staff waste valuable time searching for tickets, deciphering handwriting, and coordinating between stations, resulting in longer wait times and increased errors.
+               The client needed a customizable kitchen display system (KDS) that could be sold to fast-food chains across Canada. The system had to support real-time order status management using a physical bump bar for kitchen staff, provide a clear pickup screen for customers, and offer an internal configuration tool that allows restaurant management teams to tailor workflows, screens, and settings to different store needs.
               </p>
             </div>
 
             <div className="glance-item">
               <h3 className="glance-title">The Challenge</h3>
               <p className="glance-text">
-                How might we create a digital solution that replaces traditional paper tickets while maintaining the fast-paced workflow of a professional kitchen? The system needed to be intuitive enough for minimal training yet robust enough to handle peak service hours.
+               As the only designer, I needed to create a kitchen display system the client could sell to fast-food chains across Canada. It had to support fast kitchen workflows, let chefs manage orders with a bump bar, show pickup status to customers, and let managers customize settings for each location.
               </p>
             </div>
 
             <div className="glance-item">
               <h3 className="glance-title">The Solution</h3>
               <p className="glance-text">
-                A purpose-built Kitchen Display System featuring real-time order synchronization, station-specific views, visual order prioritization, and touch-optimized interfaces that integrate seamlessly with existing POS systems to improve kitchen efficiency and reduce errors.
+                    I designed an all-in-one system with real-time order tracking, a bump-bar workflow for chefs, a pickup screen for customers, and a configuration tool for managers. I worked closely with the client and developers through back-and-forth communication to ensure the system met business goals, integrated seamlessly with existing POS systems, and remained simple to use during busy hours across multiple locations.
               </p>
             </div>
           </div>
