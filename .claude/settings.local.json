@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.tania-li.com)",
+      "WebFetch(domain:christy-hu.com)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pkill:*)",
+      "Bash(claude update)",
+      "Bash(brew upgrade:*)",
+      "Bash(brew update:*)",
+      "Bash(claude --version:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
