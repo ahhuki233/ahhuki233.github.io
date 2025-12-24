@@ -49,6 +49,29 @@
   font-weight: 600;
 }
 
+/* Inline Links */
+.inline-link {
+  color: var(--color-accent-purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
+  transition: color var(--transition-speed) var(--transition-easing),
+              text-decoration-color var(--transition-speed) var(--transition-easing);
+}
+
+.inline-link:hover,
+.inline-link:focus {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+.inline-link:focus-visible {
+  outline: 2px solid var(--color-accent-purple);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 /* Hero Section */
 .case-study-hero {
   padding: var(--spacing-xl) 0;
@@ -221,6 +244,12 @@
 
 .case-study-section:nth-child(even) {
   background-color: var(--color-background-alt);
+}
+
+/* Reduced overall height for sections with less content */
+.at-a-glance,
+.results {
+  padding: var(--spacing-sm) 0 !important;
 }
 
 .section-heading {
@@ -563,6 +592,30 @@
   justify-content: center;
   background-color: rgba(128, 90, 213, 0.1);
   border-radius: 50%;
+}
+
+/* Plain text number styling for usability test tasks */
+.development .method-icon {
+  background-color: transparent;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  color: var(--color-text);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+}
+
+/* Remove card outline for usability test tasks */
+.development .method-card {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Reduce space between tasks and add space after */
+.development .research-methods {
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
 }
 
 .method-title {

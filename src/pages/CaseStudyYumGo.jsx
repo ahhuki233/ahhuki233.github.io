@@ -854,46 +854,136 @@ const CaseStudyYumGo = () => {
         </div>
       </section> */}
 
+      {/* Develop & Test */}
+      <section className="case-study-section development">
+        <div className="container">
+          <h2 className="section-heading">Develop & Test: Iterative Testing & Adaptation</h2>
+
+   <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Usability Test</h3>
+          <p className="section-intro">
+            I ran two think-aloud usability tests, where participants verbalize their thoughts while using the product, on the <a href="https://www.figma.com/proto/yWp71F0guPfT0ayefFTor3/INF1611_PRA0101_A5_Group-8_-WireframePrototype_2025-11-03?node-id=1-2&t=Mn2DQxJktr0i7ZK2-1" target="_blank" rel="noopener noreferrer" className="inline-link">mid-fidelity prototype</a> with two participants.
+          </p>
+
+          <p className="content-paragraph" style={{ marginBottom: 'var(--spacing-md)' }}>
+            Participants were prompted to complete two tasks:
+          </p>
+
+          <div className="research-methods">
+            <div className="method-card">
+              <div>
+                <h4 className="method-title">1. Find and Book a Restaurant</h4>
+                <p className="method-description">
+                  A vegan user and their gluten-free friend with a dog search for pet-friendly restaurants, review details like menu, photos, and distance, and successfully make a reservation.
+                </p>
+              </div>
+            </div>
+
+            <div className="method-card">
+              <div>
+                <h4 className="method-title">2. Leave a Review After Dining</h4>
+                <p className="method-description">
+                  Navigate to the restaurant's page and post feedback easily and intuitively.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-block">
+            <div>
+              <h3 className="content-title">Design Collaboration</h3>
+              <p className="content-paragraph">
+               I collaborated closely with the team during the wireframe and prototype phase, contributing design ideas for the Learn About page and providing clarifications to ensure smooth execution and alignment.
+              </p>
+              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+                <li>Created and led UI sketches before translating them into Figma wireframes</li>
+    <li>Conducted usability tests and gathered feedback to refine designs</li>
+    <li>Maintained continuous communication with teammates to ensure design consistency</li>
+    <li>Ensured final designs aligned with project goals and user needs</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="content-title">Usability Testing</h3>
+              <p className="content-paragraph">
+                I conducted moderated usability testing sessions with 2 participants matching our target user personas to validate the design and identify areas for improvement.
+              </p>
+              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+                <li>2 participants (1 eastern foodies, 1 western foodies)</li>
+                <li>Task-based scenarios covering discovery, filtering, and booking</li>
+                <li>Think-aloud protocol to capture user thoughts and pain points</li>
+                <li>Post-test surveys measuring satisfaction and ease of use</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Key Testing Insights</h3>
+
+          <div className="insights-grid">
+            <div className="insight-card">
+              <h4 className="insight-title">Filter Discoverability</h4>
+              <p className="insight-description">
+                "I didn't notice the dietary filter icons at first, cause they blended in too much with the other elements."
+              </p>
+              <p className="insight-stat">
+                <strong>Action Taken:</strong> Increased visual prominence of filter icons and added subtle animation on page load.
+              </p>
+            </div>
+
+            <div className="insight-card">
+              <h4 className="insight-title">Booking Confirmation</h4>
+              <p className="insight-description">
+                "I wasn't sure if my booking went through. Nothing happens after I click the reserve button."
+              </p>
+              <p className="insight-stat">
+                <strong>Action Taken:</strong> Added a clear confirmation button transition to indicate successful booking.
+              </p>
+            </div>
+
+            <div className="insight-card">
+              <h4 className="insight-title">Navigation Visibility</h4>
+              <p className="insight-description">
+                "How can I leave a review? I couldn't find the review section."
+              </p>
+              <p className="insight-stat">
+                <strong>Action Taken:</strong> Improved visibility of the review tab.
+              </p>
+            </div>
+
+            <div className="insight-card">
+              <h4 className="insight-title">Cultural Context</h4>
+              <p className="insight-description">
+                "The tipping culture information was exactly what I needed as someone new to Canada!"
+              </p>
+              <p className="insight-stat">
+                <strong>Success:</strong> Cultural guidance features were highly valued by international users, validating our research insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Results & Impact */}
       <section className="case-study-section results">
         <div className="container">
           <h2 className="section-heading">Results & Impact</h2>
 
-          <div className="results-grid">
-            <div className="result-card">
-              <div className="result-metric">85%</div>
-              <p className="result-description">
-                Task completion rate for finding and booking a restaurant in usability testing (up from 60% in initial tests)
-              </p>
+          <div className="content-block">
+            <div>
+              <h3 className="content-title">Outcome</h3>
+              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+                <li>Users can confidently discover restaurants using dietary filters;</li>
+                <li>Book tables and navigate to restaurants in one app.</li>
+              </ul>
             </div>
 
-            <div className="result-card">
-              <div className="result-metric">3 min</div>
-              <p className="result-description">
-                Average time to complete booking reduced from 8 minutes to 3 minutes
-              </p>
+            <div>
+              <h3 className="content-title">Impact</h3>
+              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+                <li>Familiar patterns inspired by Google Maps, Uber Eats, and Yelp reduced the learning curve;</li>
+                <li>Focused features such as group voting, cultural tips, and dietary filters improved usability;</li>
+                <li>Positive feedback from user testing confirmed the design decisions.</li>
+              </ul>
             </div>
-
-            <div className="result-card">
-              <div className="result-metric">4.6/5</div>
-              <p className="result-description">
-                Average user satisfaction score in post-test surveys
-              </p>
-            </div>
-
-            <div className="result-card">
-              <div className="result-metric">92%</div>
-              <p className="result-description">
-                Of participants said they would use YumGo over current solutions
-              </p>
-            </div>
-          </div>
-
-          <div className="testimonial">
-            <blockquote className="testimonial-quote">
-              "This is exactly what I've been looking for. The map makes it so easy to find places near me, and booking was incredibly simple. I'd definitely use this."
-            </blockquote>
-            <cite className="testimonial-author">— Usability Test Participant</cite>
           </div>
         </div>
       </section>
