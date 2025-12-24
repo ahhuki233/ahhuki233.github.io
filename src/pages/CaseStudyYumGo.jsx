@@ -685,6 +685,10 @@ const CaseStudyYumGo = () => {
               className="storyboard-image"
             />
           </div>
+
+          <p className="content-paragraph" style={{ marginTop: 'var(--spacing-md)' }}>
+            <strong>Frame 1-2:</strong> The traveler arrives in Toronto with luggage, excited to explore, but feels frustrated trying to find suitable meat-free food options. <strong>Frame 3-5:</strong> They discover the "FindEat" app, use dietary filters like gluten-free and vegan to find a nearby restaurant, and quickly reserve a spot just a one-minute walk away. <strong>Frame 6:</strong> They enjoy the meal and leave a 5-star review on the app.
+          </p>
         </div>
       </section>
 
