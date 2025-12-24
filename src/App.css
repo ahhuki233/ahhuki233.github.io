@@ -1,0 +1,182 @@
+/* Main App Styles */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Section Spacing */
+section {
+  padding: var(--spacing-xl) 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+section:first-of-type {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
+  }
+
+  section:first-of-type {
+    padding-top: 70px;
+  }
+}
+
+/* Animated Highlights */
+.highlight {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--font-family-sans);
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 2px;
+  animation: fadeIn var(--transition-speed) var(--transition-easing) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 0.3;
+    transform: scaleX(1);
+  }
+}
+
+.highlight.purple::after {
+  background-color: var(--color-accent-purple);
+}
+
+.highlight.orange::after {
+  background-color: var(--color-accent-orange);
+}
+
+.highlight.green::after {
+  background-color: var(--color-accent-green);
+}
+
+/* Underline animation */
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-speed) var(--transition-easing);
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all var(--transition-speed) var(--transition-easing);
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-accent-purple);
+  border-color: var(--color-accent-purple);
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-md);
+  transition: transform var(--transition-speed) var(--transition-easing),
+              box-shadow var(--transition-speed) var(--transition-easing);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s var(--transition-easing) forwards;
+}

@@ -1,0 +1,107 @@
+/* Philosophy Section on Home Page */
+.philosophy-section {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+  min-height: auto;
+}
+
+.philosophy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.philosophy-content p {
+  font-size: var(--font-size-large);
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.philosophy-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Section on Home Page */
+.contact-section {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+  min-height: auto;
+}
+
+.contact-block-home {
+  background-color: var(--color-background);
+  border-radius: 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: var(--spacing-xl) 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.contact-block-home h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  align-items: flex-start;
+}
+
+.contact-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--font-size-large);
+  font-weight: 400;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-text-light);
+}
+
+.contact-link:hover {
+  color: var(--color-accent-purple);
+  text-decoration-color: var(--color-accent-purple);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .philosophy-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .philosophy-content p {
+    font-size: var(--font-size-base);
+  }
+
+  .contact-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact-block-home {
+    padding: var(--spacing-lg) 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .contact-block-home h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .contact-link {
+    font-size: var(--font-size-base);
+  }
+}
