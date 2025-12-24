@@ -318,11 +318,12 @@ const CaseStudyYumGo = () => {
                   <div className="solution-impact-block">
                     <h4 className="block-label">Impact/Why This Matters</h4>
                     <div className="impact-stat">
-                      <span className="stat-large">10/12</span>
-                      <p className="stat-description">users seek authentic user-generated content to make decisions</p>
+                      <span className="stat-large">6/8</span>
+                      <p className="stat-description">participants mentioned cross-referencing different apps to get different types of information before making a decision
+</p>
                     </div>
                     <p className="impact-text">
-                      Comprehensive details with authentic photos and reviews help users make confident decisions about where to dine, reducing uncertainty and building trust before booking.
+                      An all-in-one experience from discovery to booking to directions, streamlining the user journey and resolving common app navigation and booking issues.
                     </p>
                   </div>
                 </div>
