@@ -54,7 +54,7 @@ const CaseStudyKDS = () => {
               </div>
             </dl>
 
-            <div className="hero-actions">
+            {/* <div className="hero-actions">
               <a
                  target="_blank"
                 href="https://www.figma.com/proto/xklBS0ojXLmnUPRxRkd261/INF1611_PRA0101_A8_XueerXu_FinalPrototype_2025-12-01?node-id=112-5258&t=19oNj9l7xCmVXKgi-1"
@@ -63,7 +63,7 @@ const CaseStudyKDS = () => {
               >
                 View Prototype →
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

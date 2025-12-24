@@ -714,6 +714,16 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .case-study-hero .container {
     grid-template-columns: 1fr;
@@ -753,6 +763,10 @@
   }
 
   .learnings-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -821,7 +835,7 @@
 
 @media (max-width: 480px) {
   .case-study-section {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
   }
 
   .case-study-hero {
@@ -832,6 +846,18 @@
     padding: var(--spacing-sm) 0;
   }
 
+  .case-study-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .case-study-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .section-heading {
+    font-size: var(--font-size-xl);
+  }
+
   .app-name-placeholder {
     width: 56px;
     height: 56px;
@@ -840,6 +866,7 @@
   .project-meta {
     grid-template-columns: 1fr;
     padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
   }
 
   .glance-item,
@@ -849,6 +876,13 @@
   .result-card,
   .learning-block {
     padding: var(--spacing-sm);
+  }
+
+  .glance-title,
+  .feature-title,
+  .method-title,
+  .insight-title {
+    font-size: var(--font-size-base);
   }
 
   .image-placeholder,
@@ -862,6 +896,18 @@
 
   .image-placeholder.large {
     min-height: 250px;
+  }
+
+  .content-title,
+  .solution-title,
+  .timeline-title,
+  .learning-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .method-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 

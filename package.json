@@ -3,14 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-   "homepage": "https://ahhuki233.github.io/portfolio",
+   "homepage": "https://ahhuki233.github.io",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist --dotfiles"
+},
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

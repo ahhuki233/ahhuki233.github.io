@@ -34,18 +34,29 @@
 
 /* Multiple images grid */
 .project-images-grid {
-  display: grid;
   gap: var(--spacing-sm);
   padding: var(--spacing-md);
   border-radius: 12px;
-  /* min-height: 500px; */
   align-content: center;
+}
+
+.project-images-grid-view {
+  display: grid;
+  width: 100%;
+  gap: var(--spacing-sm);
+}
+
+.project-images-slideshow {
+  display: none;
 }
 
 /* Grid layout for multiple images */
 .project-images-grid.project-images-purple {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   background-color: hsl(256, 70%, 95%);
+}
+
+.project-images-grid.project-images-purple .project-images-grid-view {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* Single image layout */
@@ -223,6 +234,52 @@
 
   .project-image .image-placeholder {
     aspect-ratio: 16 / 9;
+  }
+
+  /* Switch to slideshow on mobile */
+  .project-images-grid-view {
+    display: none !important;
+  }
+
+  .project-images-slideshow {
+    display: block;
+  }
+
+  /* Ensure slideshow images have proper styling */
+  .project-images-purple .project-images-slideshow .project-image-wrapper {
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .project-images-purple .project-images-slideshow .project-image-img {
+    width: 100%;
+    aspect-ratio: 215 / 466;
+    object-fit: cover;
+    display: block;
+  }
+
+  .project-images-orange .project-images-slideshow .project-image-wrapper {
+    border: 2px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-images-orange .project-images-slideshow .project-image-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Reduce grid padding for KDS to make image bigger */
+  .project-images-grid.project-images-orange {
+    padding: var(--spacing-sm);
   }
 }
 

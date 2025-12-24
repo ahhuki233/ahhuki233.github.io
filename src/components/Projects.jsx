@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Projects.css'
+import ImageSlideshow from './ImageSlideshow'
 import kdsProjectImage from '../assets/images/kds-project-image.png'
 import yumgoImage1 from '../assets/images/yumgo-project-image-1.png'
 import yumgoImage2 from '../assets/images/yumgo-project-image-2.png'
@@ -70,15 +71,30 @@ const Projects = () => {
               <div className="project-image">
                 {project.images && project.images.length > 0 ? (
                   <div className={`project-images-grid project-images-${project.accentColor}`}>
-                    {project.images.map((image, index) => (
-                      <div key={index} className="project-image-wrapper">
-                        <img
-                          src={image}
-                          alt={`${project.title} preview ${index + 1}`}
-                          className="project-image-img"
-                        />
-                      </div>
-                    ))}
+                    {/* Desktop: Grid view */}
+                    <div className="project-images-grid-view">
+                      {project.images.map((image, index) => (
+                        <div key={index} className="project-image-wrapper">
+                          <img
+                            src={image}
+                            alt={`${project.title} preview ${index + 1}`}
+                            className="project-image-img"
+                          />
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Mobile: Slideshow */}
+                    <div className="project-images-slideshow">
+                      <ImageSlideshow
+                        images={project.images.map((image, index) => ({
+                          src: image,
+                          alt: `${project.title} preview ${index + 1}`,
+                          className: 'project-image-img',
+                          wrapperClassName: 'project-image-wrapper'
+                        }))}
+                      />
+                    </div>
                   </div>
                 ) : (
                   <div className="image-placeholder">

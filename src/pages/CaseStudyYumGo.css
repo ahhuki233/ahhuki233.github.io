@@ -436,10 +436,17 @@
 
 /* User Personas */
 .persona-images {
+  margin-top: var(--spacing-md);
+}
+
+.persona-images-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
-  margin-top: var(--spacing-md);
+}
+
+.persona-images-slideshow {
+  display: none;
 }
 
 .persona-image-wrapper {
@@ -453,9 +460,61 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Solution Images - Desktop Grid vs Mobile Slideshow */
+.solution-images-grid {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.solution-images-slideshow {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .persona-images {
-    grid-template-columns: 1fr;
+  /* Persona images - switch to slideshow on mobile */
+  .persona-images-grid {
+    display: none;
+  }
+
+  .persona-images-slideshow {
+    display: block;
+  }
+
+  /* Ensure persona slideshow images maintain styling */
+  .persona-images-slideshow .persona-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Solution images - switch to slideshow on mobile */
+  .solution-images-grid {
+    display: none !important;
+  }
+
+  .solution-images-slideshow {
+    display: block;
+  }
+
+  .solution-image-container {
+    gap: 0;
+  }
+
+  /* Ensure slideshow images maintain their styling */
+  .solution-images-slideshow .slideshow-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solution-images-slideshow .solution-image {
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 250px;
   }
 }
 
@@ -705,6 +764,10 @@
   align-items: center;
   gap: var(--spacing-sm);
   flex: 1;
+}
+
+.solution-image-container.solution-images-slideshow {
+  padding: var(--spacing-md);
 }
 
 .solution-image {
@@ -1031,6 +1094,16 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .insights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .case-study-hero .container {
     grid-template-columns: 1fr;
@@ -1084,6 +1157,10 @@
   }
 
   .learnings-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1156,7 +1233,7 @@
 
 @media (max-width: 480px) {
   .case-study-section {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
   }
 
   .case-study-hero {
@@ -1167,6 +1244,18 @@
     padding: var(--spacing-sm) 0;
   }
 
+  .case-study-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .case-study-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .section-heading {
+    font-size: var(--font-size-xl);
+  }
+
   .app-name-placeholder {
     width: 56px;
     height: 56px;
@@ -1175,6 +1264,7 @@
   .project-meta {
     grid-template-columns: 1fr;
     padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
   }
 
   .glance-item,
@@ -1197,6 +1287,23 @@
 
   .image-placeholder.large {
     min-height: 250px;
+  }
+
+  .solution-image-container {
+    padding: var(--spacing-sm);
+  }
+
+  .solution-number {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-base);
+  }
+
+  .content-title,
+  .solution-title,
+  .timeline-title,
+  .learning-title {
+    font-size: var(--font-size-xl);
   }
 }
 

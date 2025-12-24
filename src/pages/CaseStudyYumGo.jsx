@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CaseStudyYumGo.css'
+import ImageSlideshow from '../components/ImageSlideshow'
 import yumgoProjectImage1 from '../assets/images/yumgo-project-image-1.png'
 import yumgoProjectImage2 from '../assets/images/yumgo-project-image-2.png'
 import yumgoProjectImage3 from '../assets/images/yumgo-project-image-3.png'
@@ -120,16 +121,37 @@ const CaseStudyYumGo = () => {
             <article className="solution-item">
               <div className="solution-visual">
                 <div className="solution-image-container">
-                  <img
-                    src={yumgoProjectImage3}
-                    alt="YumGo Learn About page showing cultural and local guide features"
-                    className="solution-image"
-                  />
-                  <img
-                    src={learnAbout2}
-                    alt="YumGo Learn About page additional view"
-                    className="solution-image"
-                  />
+                  {/* Desktop: Grid view */}
+                  <div className="solution-images-grid">
+                    <img
+                      src={yumgoProjectImage3}
+                      alt="YumGo Learn About page showing cultural and local guide features"
+                      className="solution-image"
+                    />
+                    <img
+                      src={learnAbout2}
+                      alt="YumGo Learn About page additional view"
+                      className="solution-image"
+                    />
+                  </div>
+
+                  {/* Mobile: Slideshow */}
+                  <div className="solution-images-slideshow">
+                    <ImageSlideshow
+                      images={[
+                        {
+                          src: yumgoProjectImage3,
+                          alt: 'YumGo Learn About page showing cultural and local guide features',
+                          className: 'solution-image'
+                        },
+                        {
+                          src: learnAbout2,
+                          alt: 'YumGo Learn About page additional view',
+                          className: 'solution-image'
+                        }
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -174,16 +196,37 @@ const CaseStudyYumGo = () => {
             <article className="solution-item reverse">
               <div className="solution-visual">
                 <div className="solution-image-container">
-                  <img
-                    src={yumgoProjectImage2}
-                    alt="YumGo Smart Filtering interface showing filter options"
-                    className="solution-image"
-                  />
-                  <img
-                    src={yumgoReviewPage}
-                    alt="YumGo review page showing filter icons"
-                    className="solution-image"
-                  />
+                  {/* Desktop: Grid view */}
+                  <div className="solution-images-grid">
+                    <img
+                      src={yumgoProjectImage2}
+                      alt="YumGo Smart Filtering interface showing filter options"
+                      className="solution-image"
+                    />
+                    <img
+                      src={yumgoReviewPage}
+                      alt="YumGo review page showing filter icons"
+                      className="solution-image"
+                    />
+                  </div>
+
+                  {/* Mobile: Slideshow */}
+                  <div className="solution-images-slideshow">
+                    <ImageSlideshow
+                      images={[
+                        {
+                          src: yumgoProjectImage2,
+                          alt: 'YumGo Smart Filtering interface showing filter options',
+                          className: 'solution-image'
+                        },
+                        {
+                          src: yumgoReviewPage,
+                          alt: 'YumGo review page showing filter icons',
+                          className: 'solution-image'
+                        }
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -221,16 +264,37 @@ const CaseStudyYumGo = () => {
             <article className="solution-item">
               <div className="solution-visual">
                 <div className="solution-image-container">
-                  <img
-                    src={yumgoRestaurantDetails1}
-                    alt="YumGo restaurant details page showing comprehensive information"
-                    className="solution-image"
-                  />
-                  <img
-                    src={yumgoRestaurantDetails2}
-                    alt="YumGo restaurant details page additional view"
-                    className="solution-image"
-                  />
+                  {/* Desktop: Grid view */}
+                  <div className="solution-images-grid">
+                    <img
+                      src={yumgoRestaurantDetails1}
+                      alt="YumGo restaurant details page showing comprehensive information"
+                      className="solution-image"
+                    />
+                    <img
+                      src={yumgoRestaurantDetails2}
+                      alt="YumGo restaurant details page additional view"
+                      className="solution-image"
+                    />
+                  </div>
+
+                  {/* Mobile: Slideshow */}
+                  <div className="solution-images-slideshow">
+                    <ImageSlideshow
+                      images={[
+                        {
+                          src: yumgoRestaurantDetails1,
+                          alt: 'YumGo restaurant details page showing comprehensive information',
+                          className: 'solution-image'
+                        },
+                        {
+                          src: yumgoRestaurantDetails2,
+                          alt: 'YumGo restaurant details page additional view',
+                          className: 'solution-image'
+                        }
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -572,7 +636,8 @@ const CaseStudyYumGo = () => {
             We created two user personas (eastern and western foodies) to capture the goals and pain points, ensuring our design decisions stayed aligned with their needs and addressing their existing pain points.
           </p>
 
-          <div className="persona-images">
+          {/* Desktop: Grid view */}
+          <div className="persona-images persona-images-grid">
             <div className="persona-image-wrapper">
               <img
                 src={yumgoPersona1}
@@ -587,6 +652,24 @@ const CaseStudyYumGo = () => {
                 className="persona-image"
               />
             </div>
+          </div>
+
+          {/* Mobile: Slideshow */}
+          <div className="persona-images persona-images-slideshow">
+            <ImageSlideshow
+              images={[
+                {
+                  src: yumgoPersona1,
+                  alt: 'Eastern foodie user persona',
+                  className: 'persona-image'
+                },
+                {
+                  src: yumgoPersona2,
+                  alt: 'Western foodie user persona',
+                  className: 'persona-image'
+                }
+              ]}
+            />
           </div>
 
           <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Storyboard</h3>
