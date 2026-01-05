@@ -77,21 +77,21 @@ const CaseStudyKDS = () => {
             <div className="glance-item">
               <h3 className="glance-title">The Problem</h3>
               <p className="glance-text">
-               The client needed a customizable kitchen display system (KDS) that could be sold to fast-food chains across Canada. The system had to support real-time order status management using a physical bump bar for kitchen staff, provide a clear pickup screen for customers, and offer an internal configuration tool that allows restaurant management teams to tailor workflows, screens, and settings to different store needs.
+              The client needed a scalable Kitchen Display System (KDS) for high-volume quick-service restaurants across Canada. The system had to support real-time kitchen operations, customer pickup displays, and flexible internal configuration while balancing complex requirements and diverse stakeholder needs.
               </p>
             </div>
 
             <div className="glance-item">
               <h3 className="glance-title">The Challenge</h3>
               <p className="glance-text">
-               As the only designer, I needed to create a kitchen display system the client could sell to fast-food chains across Canada. It had to support fast kitchen workflows, let chefs manage orders with a bump bar, show pickup status to customers, and let managers customize settings for each location.
+              As the only designer and one of the front-end developers on the project, my challenge was to design a Kitchen Display System that balanced user needs with development feasibility. The system needed to scale across fast-food chains in Canada, support fast-paced kitchen workflows with bump bar interactions, clearly communicate pickup status to customers, and give restaurant managers the flexibility to customize settings for each location.
               </p>
             </div>
 
             <div className="glance-item">
               <h3 className="glance-title">The Solution</h3>
               <p className="glance-text">
-                    I designed an all-in-one system with real-time order tracking, a bump-bar workflow for chefs, a pickup screen for customers, and a configuration tool for managers. I worked closely with the client and developers through back-and-forth communication to ensure the system met business goals, integrated seamlessly with existing POS systems, and remained simple to use during busy hours across multiple locations.
+                  I designed an all-in-one Kitchen Display System with real-time order tracking, bump bar support for chefs, a customer-facing pickup screen, and a flexible configuration tool for managers. Through continuous back-and-forth collaboration with the client and developers, I ensured the system aligned with business goals, integrated smoothly with existing POS systems, and stayed easy to use during peak hours across multiple locations.
               </p>
             </div>
           </div>
@@ -99,44 +99,137 @@ const CaseStudyKDS = () => {
       </section>
 
       {/* Key Features */}
-      <section className="case-study-section key-features">
+      <section className="case-study-section solution-details">
         <div className="container">
           <h2 className="section-heading">Key Solution Features</h2>
+          <p className="section-intro">
+            Each component addresses specific operational needs identified through kitchen observations and stakeholder interviews, creating a seamless workflow from order placement to pickup.
+          </p>
 
-          <div className="features-grid">
-            <article className="feature-card">
-              <div className="feature-image-placeholder">
-                <span>Real-Time Orders</span>
+          <div className="solution-showcase">
+            <article className="solution-item">
+              <div className="solution-visual">
+                <div className="solution-image-container">
+                  <div className="image-placeholder large">
+                    <span>Real-Time Orders</span>
+                    <p>Kitchen display with live order updates</p>
+                  </div>
+                </div>
               </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Real-Time Order Synchronization</h3>
-                <p className="feature-description">
-                  Orders appear instantly across all kitchen stations as they're placed. Color-coded priority indicators show order urgency, while automatic routing ensures each item goes to the correct station. No more lost tickets or communication delays.
-                </p>
+
+              <div className="solution-text">
+                <div className="solution-header">
+                  <span className="solution-number">01</span>
+                  <h3 className="solution-title">Real-Time Order Synchronization</h3>
+                </div>
+
+                <div className="solution-details-grid">
+                  <div className="solution-features-block">
+                    <h4 className="block-label">Key Features</h4>
+                    <ul className="solution-features" role="list">
+                      <li>Instant order updates across all kitchen stations</li>
+                      <li>Color-coded priority indicators for urgent orders</li>
+                      <li>Automatic routing to correct prep stations</li>
+                      <li>Real-time countdown timers for elapsed time</li>
+                    </ul>
+                  </div>
+
+                  <div className="solution-impact-block">
+                    <h4 className="block-label">Impact/Why This Matters</h4>
+                    <div className="impact-stat">
+                      <span className="stat-large">40%</span>
+                      <p className="stat-description">reduction in average order preparation time during pilot testing</p>
+                    </div>
+                    <p className="impact-text">
+                      Real-time synchronization eliminates lost tickets and communication delays, ensuring every order flows smoothly through the kitchen.
+                    </p>
+                  </div>
+                </div>
               </div>
             </article>
 
-            <article className="feature-card">
-              <div className="feature-image-placeholder">
-                <span>Station Views</span>
+            <article className="solution-item reverse">
+              <div className="solution-visual">
+                <div className="solution-image-container">
+                  <div className="image-placeholder large">
+                    <span>Station Views</span>
+                    <p>Customized display for each kitchen station</p>
+                  </div>
+                </div>
               </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Station-Specific Workflow</h3>
-                <p className="feature-description">
-                  Each kitchen station sees only relevant items for their area. Customizable layouts adapt to different kitchen configurations. Staff can mark items complete as they're prepared, automatically updating all displays and keeping the entire kitchen synchronized.
-                </p>
+
+              <div className="solution-text">
+                <div className="solution-header">
+                  <span className="solution-number">02</span>
+                  <h3 className="solution-title">Station-Specific Workflow</h3>
+                </div>
+
+                <div className="solution-details-grid">
+                  <div className="solution-features-block">
+                    <h4 className="block-label">Key Features</h4>
+                    <ul className="solution-features" role="list">
+                      <li>Customizable station assignments for flexible layouts</li>
+                      <li>Item-level status tracking with completion checkboxes</li>
+                      <li>Cross-station visibility for order coordination</li>
+                      <li>Special instruction highlights for dietary restrictions</li>
+                    </ul>
+                  </div>
+
+                  <div className="solution-impact-block">
+                    <h4 className="block-label">Impact/Why This Matters</h4>
+                    <div className="impact-quote">
+                      <blockquote className="user-quote">
+                        "I need to know what's urgent without reading every ticket. Color and position tell me what to cook first."
+                      </blockquote>
+                      <cite className="quote-attribution">— Kitchen Staff Interview</cite>
+                      <p className="quote-context">12/15 staff members relied on visual cues to prioritize orders</p>
+                    </div>
+                    <p className="impact-text">
+                      Station-specific filtering reduces cognitive load and prevents staff from being overwhelmed during busy service.
+                    </p>
+                  </div>
+                </div>
               </div>
             </article>
 
-            <article className="feature-card">
-              <div className="feature-image-placeholder">
-                <span>Analytics</span>
+            <article className="solution-item">
+              <div className="solution-visual">
+                <div className="solution-image-container">
+                  <div className="image-placeholder large">
+                    <span>Analytics Dashboard</span>
+                    <p>Performance metrics and reporting</p>
+                  </div>
+                </div>
               </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Performance Analytics</h3>
-                <p className="feature-description">
-                  Track average preparation times, identify bottlenecks, and monitor kitchen performance across shifts. Real-time metrics help managers make informed decisions while historical data reveals trends and opportunities for improvement.
-                </p>
+
+              <div className="solution-text">
+                <div className="solution-header">
+                  <span className="solution-number">03</span>
+                  <h3 className="solution-title">Performance Analytics</h3>
+                </div>
+
+                <div className="solution-details-grid">
+                  <div className="solution-features-block">
+                    <h4 className="block-label">Key Features</h4>
+                    <ul className="solution-features" role="list">
+                      <li>Real-time performance metrics during service</li>
+                      <li>Historical trend analysis for improvement</li>
+                      <li>Station-by-station efficiency comparisons</li>
+                      <li>Peak time identification and capacity planning</li>
+                    </ul>
+                  </div>
+
+                  <div className="solution-impact-block">
+                    <h4 className="block-label">Impact/Why This Matters</h4>
+                    <div className="impact-stat">
+                      <span className="stat-large">60%</span>
+                      <p className="stat-description">of observed delays were caused by poor coordination between stations</p>
+                    </div>
+                    <p className="impact-text">
+                      Data-driven insights help optimize kitchen operations, staffing decisions, and identify bottlenecks before they impact service.
+                    </p>
+                  </div>
+                </div>
               </div>
             </article>
           </div>

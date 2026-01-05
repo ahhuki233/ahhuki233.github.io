@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="footer-links" role="list">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/xueer-yuki-xu-5b098b1aa/"
+                  href="https://www.linkedin.com/in/xueer-yuki-xu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link"

@@ -157,7 +157,7 @@ const CaseStudyYumGo = () => {
 
               <div className="solution-text">
                 <div className="solution-header">
-                  <span className="solution-number">01</span>
+                  {/* <span className="solution-number">01</span> */}
                   <h3 className="solution-title">Cultural & Local Guide</h3>
                 </div>
 
@@ -232,7 +232,7 @@ const CaseStudyYumGo = () => {
 
               <div className="solution-text">
                 <div className="solution-header">
-                  <span className="solution-number">02</span>
+                  {/* <span className="solution-number">02</span> */}
                   <h3 className="solution-title">Filter icons for search and restaurant details</h3>
                 </div>
 
@@ -300,7 +300,7 @@ const CaseStudyYumGo = () => {
 
               <div className="solution-text">
                 <div className="solution-header">
-                  <span className="solution-number">03</span>
+                  {/* <span className="solution-number">03</span> */}
                   <h3 className="solution-title">Restaurant Details</h3>
                 </div>
 
@@ -323,7 +323,7 @@ const CaseStudyYumGo = () => {
 </p>
                     </div>
                     <p className="impact-text">
-                      An all-in-one experience from discovery to booking to directions, streamlining the user journey and resolving common app navigation and booking issues.
+                      An all-in-one experience from discovery to booking to directions, enhancing the user journey and resolving common app navigation and booking issues.
                     </p>
                   </div>
                 </div>
@@ -628,13 +628,13 @@ const CaseStudyYumGo = () => {
             <div className="design-goal-item">
               <span className="goal-number">04</span>
               <h4 className="goal-title">End-to-End Support</h4>
-              <p className="goal-text">Streamline the full dining journey with wishlist, routing, and social media cues.</p>
+              <p className="goal-text">Optimize the full dining journey with wishlist, routing, and social media cues.</p>
             </div>
           </div>
 
           <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>User Personas</h3>
           <p className="content-paragraph">
-            We created two user personas (eastern and western foodies) to capture the goals and pain points, ensuring our design decisions stayed aligned with their needs and addressing their existing pain points.
+            We created two user personas to capture the goals and pain points, ensuring our design decisions stayed aligned with their needs and addressing their existing pain points.
           </p>
 
           {/* Desktop: Grid view */}
@@ -905,10 +905,10 @@ const CaseStudyYumGo = () => {
             <div>
               <h3 className="content-title">Usability Testing</h3>
               <p className="content-paragraph">
-                I conducted moderated usability testing sessions with 2 participants matching our target user personas to validate the design and identify areas for improvement.
+                I conducted moderated usability testing sessions with 2 participants matching our target user personas to identify areas for improvement.
               </p>
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>2 participants (1 eastern foodies, 1 western foodies)</li>
+                <li>2 participants</li>
                 <li>Task-based scenarios covering discovery, filtering, and booking</li>
                 <li>Think-aloud protocol to capture user thoughts and pain points</li>
                 <li>Post-test surveys measuring satisfaction and ease of use</li>
@@ -979,7 +979,7 @@ const CaseStudyYumGo = () => {
             <div>
               <h3 className="content-title">Impact</h3>
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>Familiar patterns inspired by Google Maps, Uber Eats, and Yelp reduced the learning curve;</li>
+                <li>User commented that the familiar patterns such as layout inspired by Google Maps reduced the learning curve;</li>
                 <li>Focused features such as group voting, cultural tips, and dietary filters improved usability;</li>
                 <li>Positive feedback from user testing confirmed the design decisions.</li>
               </ul>
@@ -1001,13 +1001,13 @@ const CaseStudyYumGo = () => {
                   <strong>Less is more:</strong> Removing features is often harder than adding them. The most impactful improvements came from simplifying the booking flow, not adding features.
                 </li>
                 <li>
-                  <strong>Context matters:</strong> Understanding the user's environment (often on-the-go, time-constrained) shaped critical design decisions like the map-first approach and streamlined booking.
+                  <strong>Context matters:</strong> Understanding the user's environment (often on-the-go, time-constrained) shaped critical design decisions like the map-first approach and simplifying booking.
                 </li>
                 <li>
                   <strong>Test early and often:</strong> Each round of usability testing revealed assumptions that would have created friction in the final product. Low-fidelity testing saved significant time.
                 </li>
                 <li>
-                  <strong>Accessibility drives better design:</strong> Designing for accessibility (color contrast, tap targets, screen reader support) resulted in a more usable product for everyone.
+                  <strong>Accessibility drives better design:</strong> Designing for accessibility (color contrast and tap targets support) resulted in a more usable product for everyone.
                 </li>
               </ul>
             </div>
