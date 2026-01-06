@@ -75,7 +75,7 @@ const CaseStudyKDS = () => {
 
           <div className="glance-grid">
             <div className="glance-item">
-              <h3 className="glance-title">The Problem</h3>
+              <h3 className="glance-title">The Opportunity</h3>
               <p className="glance-text">
               The client needed a scalable Kitchen Display System (KDS) for high-volume quick-service restaurants across Canada. The system had to support real-time kitchen operations, customer pickup displays, and flexible internal configuration while balancing complex requirements and diverse stakeholder needs.
               </p>

@@ -88,14 +88,14 @@ const CaseStudyYumGo = () => {
 
           <div className="glance-grid">
             <div className="glance-item">
-              <h3 className="glance-title">The Problem</h3>
+              <h3 className="glance-title">The Opportunity</h3>
               <p className="glance-text">
                 International foodie tourists need a personalized and centralized way to discover and book restaurants, so their travel experiences can be memorable, culturally-immersive, high-value, and easy.
               </p>
             </div>
 
             <div className="glance-item">
-              <h3 className="glance-title">The Challenge</h3>
+              <h3 className="glance-title">The Problem</h3>
               <p className="glance-text">
                 How might we support foodie international tourists in discovering and choosing restaurants by reducing information fragmentation, improving reliability, and providing cultural context during high stakes travel decisions?
               </p>
@@ -857,7 +857,7 @@ const CaseStudyYumGo = () => {
       {/* Develop & Test */}
       <section className="case-study-section development">
         <div className="container">
-          <h2 className="section-heading">Develop & Test: Iterative Testing & Adaptation</h2>
+          <h2 className="section-heading">Design & Test: Iterative Testing & Adaptation</h2>
 
    <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Usability Test</h3>
           <p className="section-intro">
