@@ -19,6 +19,11 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
     { to: '/about', label: 'About' },
   ]
 
+  const resumeLink = {
+    href: 'https://drive.google.com/file/d/1ZkmUMAwO08Ppb7SkKpx5jCKhzM7OudJU/view?usp=sharing',
+    label: 'Resume'
+  }
+
   const handleLinkClick = (hash) => {
     setIsMenuOpen(false)
     if (hash && location.pathname === '/') {
@@ -83,6 +88,19 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
               </Link>
             </li>
           ))}
+          <li key={resumeLink.label}>
+            <a
+              href={resumeLink.href}
+              className="nav-link nav-link-external"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Resume (opens in new tab)"
+            >
+              {resumeLink.label}
+              <span className="external-icon" aria-hidden="true">↗</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
