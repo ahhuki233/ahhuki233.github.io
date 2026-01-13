@@ -550,15 +550,24 @@
     gap: 0;
   }
 
+  /* YumGo image container responsive styling */
+  .yumgo-image-container {
+    padding: var(--spacing-sm);
+    background-color: hsl(256, 70%, 95%);
+    border-radius: 12px;
+  }
+
   /* Ensure slideshow images maintain their styling */
-  .solution-images-slideshow .slideshow-slide {
+  .solution-images-slideshow .slideshow-slide,
+  .yumgo-solution-images-slideshow .slideshow-slide {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .solution-images-slideshow .solution-image,
-  .solution-images-slideshow .yumgo-solution-image {
+  .solution-images-slideshow .yumgo-solution-image,
+  .yumgo-solution-images-slideshow .yumgo-solution-image {
     border: 1px solid #000;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

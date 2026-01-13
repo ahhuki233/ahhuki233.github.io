@@ -656,7 +656,7 @@ const CaseStudyYumGo = () => {
             <div>
               <h3 className="content-title">Outcome</h3>
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>Users can confidently discover restaurants using dietary filters;</li>
+                <li>Users can discover restaurants using dietary filters with no errors;</li>
                 <li>Book tables and navigate to restaurants in one app.</li>
               </ul>
             </div>
