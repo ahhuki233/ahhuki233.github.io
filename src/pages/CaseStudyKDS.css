@@ -863,6 +863,15 @@
     width: 16px;
     height: 16px;
   }
+
+  /* Ensure slideshow displays on mobile */
+  .solution-images-grid {
+    display: none !important;
+  }
+
+  .solution-images-slideshow {
+    display: block !important;
+  }
 }
 
 @media (max-width: 480px) {
