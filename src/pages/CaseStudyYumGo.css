@@ -492,6 +492,17 @@
 /* Solution Images - Desktop Grid vs Mobile Slideshow */
 .solution-images-grid {
   display: flex;
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* YumGo Key Screens - Side by Side Grid */
+.yumgo-screens-grid {
+  display: flex;
+  flex-direction: row;
   gap: var(--spacing-sm);
   justify-content: center;
   align-items: center;
@@ -520,7 +531,8 @@
   }
 
   /* Solution images - switch to slideshow on mobile */
-  .solution-images-grid {
+  .solution-images-grid,
+  .yumgo-screens-grid {
     display: none !important;
   }
 
@@ -539,7 +551,8 @@
     align-items: center;
   }
 
-  .solution-images-slideshow .solution-image {
+  .solution-images-slideshow .solution-image,
+  .solution-images-slideshow .yumgo-solution-image {
     border: 1px solid #000;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -803,12 +816,20 @@
 
 .solution-visual {
   position: relative;
+  display: block;
+  height: 100%;
+}
+
+/* YumGo Visual - Same as deployed solution-visual */
+.yumgo-visual {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.solution-image-container {
+/* YumGo Image Container - Same as deployed solution-image-container */
+.yumgo-image-container {
   background-color: hsl(256, 70%, 95%);
   padding: var(--spacing-md);
   border-radius: 12px;
@@ -819,12 +840,26 @@
   flex: 1;
 }
 
+.solution-image-container {
+  background-color: hsl(256, 70%, 95%);
+  padding: var(--spacing-md);
+  border-radius: 12px;
+  flex: 1;
+}
+
+.solution-image-container:has(.solution-images-grid),
+.solution-image-container:has(.yumgo-screens-grid) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .solution-image-container.solution-images-slideshow {
   padding: var(--spacing-md);
 }
 
 .solution-image {
-  width: 100%;
+  width: auto;
   max-width: 250px;
   height: auto;
   border: 1px solid #000;
@@ -834,7 +869,25 @@
               box-shadow var(--transition-speed) var(--transition-easing);
 }
 
-.solution-image:hover {
+/* YumGo Solution Image - Same as solution-image */
+.yumgo-solution-image {
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-speed) var(--transition-easing),
+              box-shadow var(--transition-speed) var(--transition-easing);
+}
+
+.solution-images-grid .solution-image,
+.yumgo-screens-grid .yumgo-solution-image {
+  flex: 0 1 auto;
+}
+
+.solution-image:hover,
+.yumgo-solution-image:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }

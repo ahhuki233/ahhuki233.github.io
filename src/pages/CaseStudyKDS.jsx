@@ -1,6 +1,11 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CaseStudyKDS.css'
+import ImageSlideshow from '../components/ImageSlideshow'
+import kdsExpoStation from '../assets/images/kds-expo-station.png'
+import kdsPickupStation from '../assets/images/kds-pickup-station.png'
+import kdsLocalConfigBumbar from '../assets/images/kds-local-config-bumbar.png'
+import kdsGlobalConfigOrderCard from '../assets/images/kds-gloal-config-order-card.png'
 
 const CaseStudyKDS = () => {
   useEffect(() => {
@@ -42,7 +47,7 @@ const CaseStudyKDS = () => {
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Team</dt>
-                <dd className="meta-value">Client Team, Management Team, Front-end & Back-end Developers</dd>
+                <dd className="meta-value">Client Team (Panasonic), Management Team, Front-end & Back-end Developers</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
@@ -50,7 +55,7 @@ const CaseStudyKDS = () => {
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Technologies</dt>
-                <dd className="meta-value">.NET 8, React, UI/UX Design, Figma</dd>
+                <dd className="meta-value">Figma, .NET 8, MySQL Workbench</dd>
               </div>
             </dl>
 
@@ -103,24 +108,57 @@ const CaseStudyKDS = () => {
         <div className="container">
           <h2 className="section-heading">Key Solution Features</h2>
           <p className="section-intro">
-            Each component addresses specific operational needs identified through kitchen observations and stakeholder interviews, creating a seamless workflow from order placement to pickup.
+            Each component addresses specific operational needs identified through kitchen observations and stakeholder communication, creating a workflow from order placement to pickup.
           </p>
 
           <div className="solution-showcase">
             <article className="solution-item">
               <div className="solution-visual">
                 <div className="solution-image-container">
-                  <div className="image-placeholder large">
-                    <span>Real-Time Orders</span>
-                    <p>Kitchen display with live order updates</p>
+                  {/* Desktop: Grid view */}
+                  <div className="solution-images-grid">
+                    <div className="image-with-caption">
+                      <img
+                        src={kdsExpoStation}
+                        alt="KDS expo station display showing real-time orders with color-coded priority indicators"
+                        className="solution-image"
+                      />
+                      <p className="image-caption">EXPO Station KDS Display</p>
+                    </div>
+                    <div className="image-with-caption">
+                      <img
+                        src={kdsPickupStation}
+                        alt="KDS pickup station display for customer order status"
+                        className="solution-image"
+                      />
+                      <p className="image-caption">Pickup Station KDS Display</p>
+                    </div>
+                  </div>
+
+                  {/* Mobile: Slideshow */}
+                  <div className="solution-images-slideshow">
+                    <ImageSlideshow
+                      images={[
+                        {
+                          src: kdsExpoStation,
+                          alt: 'EXPO Station KDS Display - showing real-time orders with color-coded priority indicators',
+                          className: 'solution-image'
+                        },
+                        {
+                          src: kdsPickupStation,
+                          alt: 'Pickup Station KDS Display - for customer order status',
+                          className: 'solution-image'
+                        }
+                      ]}
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="solution-text">
                 <div className="solution-header">
-                  <span className="solution-number">01</span>
-                  <h3 className="solution-title">Real-Time Order Synchronization</h3>
+                  {/* <span className="solution-number">01</span> */}
+                  <h3 className="solution-title">Real-Time Order Display</h3>
                 </div>
 
                 <div className="solution-details-grid">
@@ -129,20 +167,22 @@ const CaseStudyKDS = () => {
                     <ul className="solution-features" role="list">
                       <li>Instant order updates across all kitchen stations</li>
                       <li>Color-coded priority indicators for urgent orders</li>
-                      <li>Automatic routing to correct prep stations</li>
+                      {/* <li>Automatic routing to correct prep stations</li> */}
                       <li>Real-time countdown timers for elapsed time</li>
                     </ul>
                   </div>
 
                   <div className="solution-impact-block">
                     <h4 className="block-label">Impact/Why This Matters</h4>
-                    <div className="impact-stat">
-                      <span className="stat-large">40%</span>
-                      <p className="stat-description">reduction in average order preparation time during pilot testing</p>
-                    </div>
-                    <p className="impact-text">
-                      Real-time synchronization eliminates lost tickets and communication delays, ensuring every order flows smoothly through the kitchen.
+                    <p className="impact-text" style={{ marginBottom: 'var(--spacing-sm)', fontWeight: '600' }}>
+                      The Goal: Simplify the high-stress kitchen environment by turning complex data into easy, visual actions.
                     </p>
+                    <ul className="solution-features" role="list">
+                      <li><strong>Faster Decisions:</strong> Color-coded alerts and timers tell chefs exactly what to cook first without them having to think or calculate.</li>
+                      <li><strong>Less Distraction:</strong> Automatic routing sends only relevant orders to specific stations, so staff aren't overwhelmed by extra info.</li>
+                      <li><strong>Zero Lag:</strong> Instant updates ensure everyone is looking at the same information, preventing mistakes caused by communication gaps.</li>
+                      <li><strong>Reduced Stress:</strong> By tracking "live" status, the system removes the need for shouting and double-checking paper tickets.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -151,87 +191,81 @@ const CaseStudyKDS = () => {
             <article className="solution-item reverse">
               <div className="solution-visual">
                 <div className="solution-image-container">
-                  <div className="image-placeholder large">
-                    <span>Station Views</span>
-                    <p>Customized display for each kitchen station</p>
+                  {/* Desktop: Grid view */}
+                  <div className="solution-images-grid">
+                    <div className="image-with-caption">
+                      <img
+                        src={kdsLocalConfigBumbar}
+                        alt="KDS local configuration for bump bar settings"
+                        className="solution-image"
+                      />
+                      <p className="image-caption">Store Level: Virtual Keypad Mapping</p>
+                    </div>
+                    <div className="image-with-caption">
+                      <img
+                        src={kdsGlobalConfigOrderCard}
+                        alt="KDS global configuration for order card settings"
+                        className="solution-image"
+                      />
+                      <p className="image-caption">Brand Level: Order Card Template Design</p>
+                    </div>
+                  </div>
+
+                  {/* Mobile: Slideshow */}
+                  <div className="solution-images-slideshow">
+                    <ImageSlideshow
+                      images={[
+                        {
+                          src: kdsLocalConfigBumbar,
+                          alt: 'Store Level: Virtual Keypad Mapping - KDS local configuration for bump bar settings',
+                          className: 'solution-image'
+                        },
+                        {
+                          src: kdsGlobalConfigOrderCard,
+                          alt: 'Brand Level: Order Card Template Design - KDS global configuration for order card settings',
+                          className: 'solution-image'
+                        }
+                      ]}
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="solution-text">
                 <div className="solution-header">
-                  <span className="solution-number">02</span>
-                  <h3 className="solution-title">Station-Specific Workflow</h3>
+                  {/* <span className="solution-number">02</span> */}
+                  <h3 className="solution-title">Store & Brand Level Configurations</h3>
                 </div>
-
                 <div className="solution-details-grid">
                   <div className="solution-features-block">
                     <h4 className="block-label">Key Features</h4>
                     <ul className="solution-features" role="list">
-                      <li>Customizable station assignments for flexible layouts</li>
-                      <li>Item-level status tracking with completion checkboxes</li>
-                      <li>Cross-station visibility for order coordination</li>
-                      <li>Special instruction highlights for dietary restrictions</li>
+                      <li>Store-level configurations for kitchen layout, stations, and routing</li>
+                      <li>Brand-level standards for workflows, menus, and prep rules</li>
+                      <li>Clear indicators showing whether a setting is brand-locked or store-editable</li>
+                      <li>Role-based access for Headquarters (HQ) teams and store managers</li>
                     </ul>
                   </div>
 
-                  <div className="solution-impact-block">
+                   <div className="solution-impact-block">
                     <h4 className="block-label">Impact/Why This Matters</h4>
-                    <div className="impact-quote">
-                      <blockquote className="user-quote">
-                        "I need to know what's urgent without reading every ticket. Color and position tell me what to cook first."
-                      </blockquote>
-                      <cite className="quote-attribution">— Kitchen Staff Interview</cite>
-                      <p className="quote-context">12/15 staff members relied on visual cues to prioritize orders</p>
-                    </div>
-                    <p className="impact-text">
-                      Station-specific filtering reduces cognitive load and prevents staff from being overwhelmed during busy service.
+                    <p className="impact-text" style={{ marginBottom: 'var(--spacing-sm)', fontWeight: '600' }}>
+                     Balance brand consistency with store-level flexibility so kitchens run smoothly without confusion.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article className="solution-item">
-              <div className="solution-visual">
-                <div className="solution-image-container">
-                  <div className="image-placeholder large">
-                    <span>Analytics Dashboard</span>
-                    <p>Performance metrics and reporting</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="solution-text">
-                <div className="solution-header">
-                  <span className="solution-number">03</span>
-                  <h3 className="solution-title">Performance Analytics</h3>
-                </div>
-
-                <div className="solution-details-grid">
-                  <div className="solution-features-block">
-                    <h4 className="block-label">Key Features</h4>
                     <ul className="solution-features" role="list">
-                      <li>Real-time performance metrics during service</li>
-                      <li>Historical trend analysis for improvement</li>
-                      <li>Station-by-station efficiency comparisons</li>
-                      <li>Peak time identification and capacity planning</li>
+                      <li><strong>Operational Clarity:</strong> Staff instantly know which settings they can change locally and which are controlled by the brand, reducing errors.</li>
+                      <li><strong>Scalability:</strong> HQ can roll out updates across all locations at once, saving time and ensuring consistency.</li>
+                      <li><strong>Local Efficiency:</strong> Stores can adjust settings to match their physical layout and staffing without breaking brand rules.</li>
+                      <li><strong>Confidence & Control:</strong> Clear visibility into configuration ownership builds trust and prevents accidental system-wide changes.</li>
                     </ul>
-                  </div>
-
-                  <div className="solution-impact-block">
-                    <h4 className="block-label">Impact/Why This Matters</h4>
-                    <div className="impact-stat">
-                      <span className="stat-large">60%</span>
-                      <p className="stat-description">of observed delays were caused by poor coordination between stations</p>
-                    </div>
-                    <p className="impact-text">
-                      Data-driven insights help optimize kitchen operations, staffing decisions, and identify bottlenecks before they impact service.
-                    </p>
                   </div>
                 </div>
               </div>
             </article>
+          </div>
+
+          <div className="section-transition">
+            ↓ Let's take a look at how we got here ↓
           </div>
         </div>
       </section>
@@ -241,27 +275,26 @@ const CaseStudyKDS = () => {
         <div className="container">
           <h2 className="section-heading">Understanding the Problem</h2>
 
-          <div className="content-block">
-            <div className="content-text">
-              <h3 className="content-title">Research Approach</h3>
-              <p className="content-paragraph">
-                To build a solution that truly addressed kitchen workflow challenges, I conducted extensive research in real restaurant environments, observing pain points and gathering insights from both front-of-house and back-of-house staff:
-              </p>
+          <div className="content-text">
+            <h3 className="content-title">Research Methods</h3>
+            <p className="content-paragraph">
+              To build a solution that truly addressed kitchen workflow challenges, I conducted extensive research in real restaurant environments, observing pain points and gathering insights from both front-of-house and back-of-house staff:
+            </p>
 
-              <div className="research-methods">
+            <div className="research-methods">
                 <div className="method-card">
                   <div className="method-icon" aria-hidden="true">01</div>
                   <h4 className="method-title">Contextual Inquiry</h4>
                   <p className="method-description">
-                    Spent time in 5 different restaurant kitchens during peak service hours, observing workflows, communication patterns, and pain points with existing ticket systems.
+                    Spent time in three different restaurant kitchens during peak service hours, observing workflows, communication patterns, and pain points with existing ticket systems.
                   </p>
                 </div>
 
                 <div className="method-card">
                   <div className="method-icon" aria-hidden="true">02</div>
-                  <h4 className="method-title">Stakeholder Interviews</h4>
+                  <h4 className="method-title">Client Meetings</h4>
                   <p className="method-description">
-                    Conducted interviews with 15 kitchen staff members including chefs, line cooks, and expeditors to understand their specific needs and frustrations with current systems.
+                   Met with the Panasonic team to understand the requirements for building a universal design applicable to any fast-food restaurant with configurable displays.
                   </p>
                 </div>
 
@@ -269,32 +302,35 @@ const CaseStudyKDS = () => {
                   <div className="method-icon" aria-hidden="true">03</div>
                   <h4 className="method-title">Competitive Analysis</h4>
                   <p className="method-description">
-                    Analyzed 8 existing KDS solutions to identify industry standards, common pain points, and opportunities for differentiation and improvement.
+                    Analyzed three existing KDS solutions to identify industry standards, common pain points, and opportunities for differentiation and improvement.
                   </p>
                 </div>
 
-                <div className="method-card">
+                {/* <div className="method-card">
                   <div className="method-icon" aria-hidden="true">04</div>
                   <h4 className="method-title">Workflow Mapping</h4>
                   <p className="method-description">
                     Mapped current and ideal state workflows to identify bottlenecks and opportunities for automation, documenting touch points between stations and staff roles.
                   </p>
-                </div>
+                </div> */}
               </div>
-            </div>
 
-            <div className="content-visual">
-              <div className="image-placeholder large">
-                <span>Research Process</span>
-                <p>Kitchen observations and staff interviews</p>
-              </div>
+              <p className="content-paragraph" style={{ marginTop: 'var(--spacing-md)' }}>These methods let us answer key research questions efficiently within our 9-month timeline including development and project constraints.</p>
             </div>
-          </div>
+        </div>
+      </section>
+
+      {/* Coming Soon */}
+      <section className="case-study-section" style={{ textAlign: 'center', padding: 'var(--spacing-xl) 0' }}>
+        <div className="container">
+          <p style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-text-light)', fontStyle: 'italic' }}>
+            Coming soon...
+          </p>
         </div>
       </section>
 
       {/* Key Insights */}
-      <section className="case-study-section key-insights">
+      {/* <section className="case-study-section key-insights">
         <div className="container">
           <h2 className="section-heading">Key Research Insights</h2>
 
@@ -348,10 +384,10 @@ const CaseStudyKDS = () => {
             </article>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Design Process */}
-      <section className="case-study-section design-process">
+      {/* <section className="case-study-section design-process">
         <div className="container">
           <h2 className="section-heading">Design Process</h2>
 
@@ -399,10 +435,10 @@ const CaseStudyKDS = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Development Section */}
-      <section className="case-study-section development">
+      {/* <section className="case-study-section development">
         <div className="container">
           <h2 className="section-heading">Development & Implementation</h2>
 
@@ -456,10 +492,10 @@ const CaseStudyKDS = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Solution Deep Dive */}
-      <section className="case-study-section solution-details">
+      {/* <section className="case-study-section solution-details">
         <div className="container">
           <h2 className="section-heading">Solution: Key Interfaces</h2>
 
@@ -549,10 +585,10 @@ const CaseStudyKDS = () => {
             </article>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Results & Impact */}
-      <section className="case-study-section results">
+      {/* <section className="case-study-section results">
         <div className="container">
           <h2 className="section-heading">Results & Impact</h2>
 
@@ -593,10 +629,10 @@ const CaseStudyKDS = () => {
             <cite className="testimonial-author">— Head Chef, Pilot Restaurant Location</cite>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Learnings & Reflection */}
-      <section className="case-study-section learnings">
+      {/* <section className="case-study-section learnings">
         <div className="container">
           <h2 className="section-heading">Key Learnings & Next Steps</h2>
 
@@ -638,7 +674,7 @@ const CaseStudyKDS = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Project Navigation */}
       <section className="case-study-section project-navigation">

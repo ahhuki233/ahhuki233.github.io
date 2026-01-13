@@ -119,19 +119,19 @@ const CaseStudyYumGo = () => {
 
           <div className="solution-showcase">
             <article className="solution-item">
-              <div className="solution-visual">
-                <div className="solution-image-container">
+              <div className="yumgo-visual">
+                <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
-                  <div className="solution-images-grid">
+                  <div className="yumgo-screens-grid">
                     <img
                       src={yumgoProjectImage3}
                       alt="YumGo Learn About page showing cultural and local guide features"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                     <img
                       src={learnAbout2}
                       alt="YumGo Learn About page additional view"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                   </div>
 
@@ -142,12 +142,12 @@ const CaseStudyYumGo = () => {
                         {
                           src: yumgoProjectImage3,
                           alt: 'YumGo Learn About page showing cultural and local guide features',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         },
                         {
                           src: learnAbout2,
                           alt: 'YumGo Learn About page additional view',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         }
                       ]}
                     />
@@ -160,10 +160,6 @@ const CaseStudyYumGo = () => {
                   {/* <span className="solution-number">01</span> */}
                   <h3 className="solution-title">Cultural & Local Guide</h3>
                 </div>
-
-                {/* <p className="solution-description">
-                  The Learn About page helps users discover useful local knowledge, from unspoken rules like Canadian tipping culture to recommended local restaurants. Users can explore curated tips and insights that make it easier to fit in and feel comfortable in their local environment.
-                </p> */}
 
                 <div className="solution-details-grid">
                   <div className="solution-features-block">
@@ -194,19 +190,19 @@ const CaseStudyYumGo = () => {
             </article>
 
             <article className="solution-item reverse">
-              <div className="solution-visual">
-                <div className="solution-image-container">
+              <div className="yumgo-visual">
+                <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
-                  <div className="solution-images-grid">
+                  <div className="yumgo-screens-grid">
                     <img
                       src={yumgoProjectImage2}
                       alt="YumGo Smart Filtering interface showing filter options"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                     <img
                       src={yumgoReviewPage}
                       alt="YumGo review page showing filter icons"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                   </div>
 
@@ -217,12 +213,12 @@ const CaseStudyYumGo = () => {
                         {
                           src: yumgoProjectImage2,
                           alt: 'YumGo Smart Filtering interface showing filter options',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         },
                         {
                           src: yumgoReviewPage,
                           alt: 'YumGo review page showing filter icons',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         }
                       ]}
                     />
@@ -262,19 +258,19 @@ const CaseStudyYumGo = () => {
             </article>
 
             <article className="solution-item">
-              <div className="solution-visual">
-                <div className="solution-image-container">
+              <div className="yumgo-visual">
+                <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
-                  <div className="solution-images-grid">
+                  <div className="yumgo-screens-grid">
                     <img
                       src={yumgoRestaurantDetails1}
                       alt="YumGo restaurant details page showing comprehensive information"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                     <img
                       src={yumgoRestaurantDetails2}
                       alt="YumGo restaurant details page additional view"
-                      className="solution-image"
+                      className="yumgo-solution-image"
                     />
                   </div>
 
@@ -285,12 +281,12 @@ const CaseStudyYumGo = () => {
                         {
                           src: yumgoRestaurantDetails1,
                           alt: 'YumGo restaurant details page showing comprehensive information',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         },
                         {
                           src: yumgoRestaurantDetails2,
                           alt: 'YumGo restaurant details page additional view',
-                          className: 'solution-image'
+                          className: 'yumgo-solution-image'
                         }
                       ]}
                     />
@@ -330,48 +326,6 @@ const CaseStudyYumGo = () => {
               </div>
             </article>
 
-            {/* <article className="solution-item reverse">
-              <div className="solution-visual">
-                <div className="image-placeholder large">
-                  <span>Booking Flow</span>
-                  <p>Simple three-step reservation process</p>
-                </div>
-              </div>
-
-              <div className="solution-text">
-                <div className="solution-header">
-                  <span className="solution-number">04</span>
-                  <h3 className="solution-title">Streamlined Booking</h3>
-                </div>
-
-                <p className="solution-description">
-                  The booking flow was reduced to three simple steps: select date/time, enter party size, and confirm. Real-time availability prevents failed bookings. Guest checkout option removes unnecessary barriers, while account creation is offered as a value-add for easy rebooking.
-                </p>
-
-                <div className="solution-details-grid">
-                  <div className="solution-features-block">
-                    <h4 className="block-label">Key Features</h4>
-                    <ul className="solution-features" role="list">
-                      <li>Three-step booking process</li>
-                      <li>Calendar view with available slots highlighted</li>
-                      <li>Automatic confirmation and calendar sync</li>
-                      <li>Easy modification and cancellation</li>
-                    </ul>
-                  </div>
-
-                  <div className="solution-impact-block">
-                    <h4 className="block-label">Impact</h4>
-                    <div className="impact-stat">
-                      <span className="stat-large">8/8</span>
-                      <p className="stat-description">users mentioned frustrations from missing information on restaurant apps</p>
-                    </div>
-                    <p className="impact-text">
-                      Having to open another app to make a reservation causes frustration. By integrating booking directly into the discovery flow, users save time and reduce context switching.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </article> */}
           </div>
 
           <div className="section-transition">
@@ -379,90 +333,6 @@ const CaseStudyYumGo = () => {
           </div>
         </div>
       </section>
-
-      {/* Key Features */}
-      {/* <section className="case-study-section key-features">
-        <div className="container">
-          <h2 className="section-heading">Key Solution Features</h2>
-
-          <div className="features-list">
-            <article className="feature-row">
-              <div className="feature-visual">
-                <div className="feature-image-container">
-                  <img
-                    src={yumgoProjectImage1}
-                    alt="Map-based restaurant discovery interface"
-                    className="feature-image"
-                  />
-                </div>
-              </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Intuitive Map-Based Discovery</h3>
-                <p className="feature-description">
-                  Browse restaurants visually on an interactive map. See real-time availability, ratings, and dietary options at a glance. The familiar map interface leverages existing mental models, making exploration natural and engaging.
-                </p>
-                <div className="feature-why">
-                  <h4 className="feature-why-title">Why This Matters</h4>
-                  <p className="feature-why-text">
-                    User interviews showed that 6 out of 8 users prioritize location and proximity when searching for restaurants. A map-first approach reduces cognitive load by presenting spatial information visually, allowing users to make faster, more confident decisions based on their context and location.
-                  </p>
-                </div>
-                  <div>↓ Let’s take a look at how we got here ↓</div>
-              </div>
-            </article>
-
-            <article className="feature-row reverse">
-              <div className="feature-visual">
-                <div className="feature-image-container">
-                  <img
-                    src={yumgoProjectImage2}
-                    alt="Smart filtering system interface"
-                    className="feature-image"
-                  />
-                </div>
-              </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Smart Filtering System</h3>
-                <p className="feature-description">
-                  Narrow down options quickly with intelligent filters for distance, price range, dietary restrictions, and ambiance. Filter combinations are persistent and easily adjustable.
-                </p>
-                <div className="feature-why">
-                  <h4 className="feature-why-title">Why This Matters</h4>
-                  <p className="feature-why-text">
-                    Users reported decision fatigue when browsing too many options. Smart filters help reduce the paradox of choice by letting users quickly narrow results based on their preferences, while persistent filter states save time for users who search frequently.
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article className="feature-row">
-              <div className="feature-visual">
-                <div className="feature-image-container">
-                  <img
-                    src={yumgoProjectImage3}
-                    alt="Seamless booking experience interface"
-                    className="feature-image"
-                  />
-                </div>
-              </div>
-              <div className="feature-content">
-                <h3 className="feature-title">Seamless Booking Experience</h3>
-                <p className="feature-description">
-                  Complete reservations in just one tap. Real-time availability updates, automatic confirmation, and calendar integration eliminate common booking pain points. Users maintain full control with easy modification and cancellation.
-                </p>
-                <div className="feature-why">
-                  <h4 className="feature-why-title">Why This Matters</h4>
-                  <p className="feature-why-text">
-                   8/8 mentioned frustrations from missing information on restaurant apps, and they stated that having to open another app to make a reservation causes frustration.
-                  </p>
-                </div>
-              </div>
-                  <div>↓ Let’s take a look at how we got here ↓</div>
-            </article>
-          </div>
-        </div>
-    
-      </section> */}
 
       {/* Research Process */}
       <section className="case-study-section research-process">
@@ -517,33 +387,8 @@ const CaseStudyYumGo = () => {
                 </div>
 
               <p className="content-paragraph">These methods let us answer key research questions efficiently within our 4-month timeline and limited research budget.</p>
-         {/* <p className="content-paragraph">Research Insights</p>
-           <p className="content-paragraph">Here are some of the key takeaways:</p>  */}
-
-                {/* <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">03</div>
-                  <h4 className="method-title">User Journey Mapping</h4>
-                  <p className="method-description">
-                    Mapped current-state journeys to visualize pain points and emotional highs and lows throughout the restaurant discovery and booking process.
-                  </p>
-                </div>
-
-                <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">04</div>
-                  <h4 className="method-title">Task Analysis</h4>
-                  <p className="method-description">
-                    Observed 8 participants completing restaurant selection and booking tasks to identify usability issues and areas of friction.
-                  </p>
-                </div> */}
               </div>
             </div>
-{/* 
-            <div className="content-visual">
-              <div className="image-placeholder large">
-                <span>Research Process</span>
-                <p>Photos from user interviews and testing sessions</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -692,167 +537,7 @@ const CaseStudyYumGo = () => {
         </div>
       </section>
 
-      {/* Design Process */}
-      {/* <section className="case-study-section design-process">
-        <div className="container">
-          <h2 className="section-heading">Develop: Design Process</h2>
-
-          <div className="process-timeline">
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Ideation & Sketching</h3>
-                <p className="timeline-description">
-                  Generated multiple concepts through rapid sketching sessions. Explored different approaches to information architecture and navigation patterns. Created low-fidelity wireframes to test core concepts with users.
-                </p>
-                <div className="image-placeholder medium">
-                  <span>Initial Sketches</span>
-                  <p>Early wireframes and concept exploration</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Prototyping & Testing</h3>
-                <p className="timeline-description">
-                  Built interactive prototypes in Figma to validate assumptions. Conducted usability testing with 8 participants across 3 iterations. Each round of testing informed specific refinements to the navigation, filtering system, and booking flow.
-                </p>
-                <div className="prototype-images">
-                  <div className="prototype-image-wrapper">
-                    <img
-                      src={yumgoBooking1}
-                      alt="YumGo prototype testing - booking flow"
-                      className="prototype-image"
-                    />
-                  </div>
-                  <div className="prototype-image-wrapper">
-                    <img
-                      src={yumgoBooking2}
-                      alt="YumGo prototype testing - user feedback"
-                      className="prototype-image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Visual Design & Refinement</h3>
-                <p className="timeline-description">
-                  Developed a cohesive visual language that balances playfulness with professionalism. Created a design system with reusable components. Ensured WCAG AA compliance for color contrast and interactive elements.
-                </p>
-                <div className="image-placeholder medium">
-                  <span>Design System</span>
-                  <p>Colors, typography, and component library</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Solution Deep Dive */}
-      {/* <section className="case-study-section solution-details">
-        <div className="container">
-          <h2 className="section-heading">Solution: Key Screens</h2>
-
-          <div className="solution-showcase">
-            <article className="solution-item">
-              <div className="solution-text">
-                <h3 className="solution-title">Map-First Discovery</h3>
-                <p className="solution-description">
-                  The home screen centers around an interactive map showing nearby restaurants. Users can pan and zoom to explore different areas, with restaurant markers providing quick preview information on tap. This visual approach reduces cognitive load and leverages familiar interaction patterns.
-                </p>
-                <ul className="solution-features" role="list">
-                  <li>Real-time availability indicators</li>
-                  <li>Clustered markers for better readability</li>
-                  <li>Quick preview cards on marker tap</li>
-                  <li>Toggle between map and list views</li>
-                </ul>
-                <div className="feature-why">
-                  <h4 className="feature-why-title">Why This Matters</h4>
-                  <p className="feature-why-text">
-                    User interviews showed that 6 out of 8 users prioritize location and proximity when searching for restaurants. A map-first approach reduces cognitive load by presenting spatial information visually, allowing users to make faster, more confident decisions based on their context and location.
-                  </p>
-                </div>
-              </div>
-              <div className="solution-visual">
-                <div className="image-placeholder large">
-                  <span>Map Screen</span>
-                  <p>Interactive map view with restaurant markers</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="solution-item reverse">
-              <div className="solution-text">
-                <h3 className="solution-title">Smart Filtering</h3>
-                <p className="solution-description">
-                  Filters are designed for quick access without cluttering the interface. The bottom sheet design allows users to apply multiple filters while maintaining context of the map. Filter chips show active selections, and a clear all option provides easy reset.
-                </p>
-                <ul className="solution-features" role="list">
-                  <li>Contextual filter suggestions based on time and location</li>
-                  <li>Save filter combinations as presets</li>
-                  <li>Real-time result count updates</li>
-                  <li>Accessible tap targets (44x44px minimum)</li>
-                </ul>
-              </div>
-              <div className="solution-visual">
-                <div className="image-placeholder large">
-                  <span>Filter Interface</span>
-                  <p>Bottom sheet with filter options</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="solution-item">
-              <div className="solution-text">
-                <h3 className="solution-title">Restaurant Details</h3>
-                <p className="solution-description">
-                  The details page provides comprehensive information while maintaining scanability. Key information (hours, location, price range) is front and center. User photos and reviews build trust, while the prominent booking CTA drives action.
-                </p>
-                <ul className="solution-features" role="list">
-                  <li>Photo gallery with user-generated content</li>
-                  <li>Menu preview with dietary indicators</li>
-                  <li>Recent reviews with helpful sorting</li>
-                  <li>Distance and directions integration</li>
-                </ul>
-              </div>
-              <div className="solution-visual">
-                <div className="image-placeholder large">
-                  <span>Restaurant Details</span>
-                  <p>Comprehensive information and booking CTA</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="solution-item reverse">
-              <div className="solution-text">
-                <h3 className="solution-title">Streamlined Booking</h3>
-                <p className="solution-description">
-                  The booking flow was reduced to three simple steps: select date/time, enter party size, and confirm. Real-time availability prevents failed bookings. Guest checkout option removes unnecessary barriers, while account creation is offered as a value-add for easy rebooking.
-                </p>
-                <ul className="solution-features" role="list">
-                  <li>Three-step booking process</li>
-                  <li>Calendar view with available slots highlighted</li>
-                  <li>Automatic confirmation and calendar sync</li>
-                  <li>Easy modification and cancellation</li>
-                </ul>
-              </div>
-              <div className="solution-visual">
-                <div className="image-placeholder large">
-                  <span>Booking Flow</span>
-                  <p>Simple three-step reservation process</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section> */}
+   
 
       {/* Develop & Test */}
       <section className="case-study-section development">
