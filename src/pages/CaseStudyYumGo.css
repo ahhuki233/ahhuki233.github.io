@@ -513,6 +513,11 @@
   display: none;
 }
 
+/* YumGo Images Slideshow */
+.yumgo-images-slideshow {
+  display: none;
+}
+
 @media (max-width: 768px) {
   /* Persona images - switch to slideshow on mobile */
   .persona-images-grid {
@@ -536,7 +541,8 @@
     display: none !important;
   }
 
-  .solution-images-slideshow {
+  .solution-images-slideshow,
+  .yumgo-images-slideshow {
     display: block;
   }
 
@@ -794,7 +800,23 @@
    gap: var(--spacing-sm);
 }
 
+/* YumGo Solution Showcase */
+.yumgo-solution-showcase {
+  display: flex;
+  flex-direction: column;
+   gap: var(--spacing-sm);
+}
+
 .solution-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: stretch;
+  padding: var(--spacing-md) 0;
+}
+
+/* YumGo Solution Item */
+.yumgo-solution-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-lg);
@@ -806,11 +828,23 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.yumgo-solution-item.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
 .solution-item.reverse .solution-text {
   order: 2;
 }
 
+.yumgo-solution-item.reverse .solution-text {
+  order: 2;
+}
+
 .solution-item.reverse .solution-visual {
+  order: 1;
+}
+
+.yumgo-solution-item.reverse .yumgo-visual {
   order: 1;
 }
 
@@ -1232,16 +1266,20 @@
   }
 
   .solution-item,
-  .solution-item.reverse {
+  .solution-item.reverse,
+  .yumgo-solution-item,
+  .yumgo-solution-item.reverse {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
 
-  .solution-item.reverse .solution-text {
+  .solution-item.reverse .solution-text,
+  .yumgo-solution-item.reverse .solution-text {
     order: 1;
   }
 
-  .solution-item.reverse .solution-visual {
+  .solution-item.reverse .solution-visual,
+  .yumgo-solution-item.reverse .yumgo-visual {
     order: 2;
   }
 

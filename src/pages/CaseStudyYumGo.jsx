@@ -117,8 +117,8 @@ const CaseStudyYumGo = () => {
             Each screen addresses specific user needs identified through research, creating a cohesive experience from discovery to booking.
           </p>
 
-          <div className="solution-showcase">
-            <article className="solution-item">
+          <div className="yumgo-solution-showcase">
+            <article className="yumgo-solution-item">
               <div className="yumgo-visual">
                 <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
@@ -136,7 +136,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="solution-images-slideshow">
+                  <div className="yumgo-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
@@ -189,7 +189,7 @@ const CaseStudyYumGo = () => {
               </div>
             </article>
 
-            <article className="solution-item reverse">
+            <article className="yumgo-solution-item reverse">
               <div className="yumgo-visual">
                 <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
@@ -207,7 +207,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="solution-images-slideshow">
+                  <div className="yumgo-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
@@ -257,7 +257,7 @@ const CaseStudyYumGo = () => {
               </div>
             </article>
 
-            <article className="solution-item">
+            <article className="yumgo-solution-item">
               <div className="yumgo-visual">
                 <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
@@ -275,7 +275,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="solution-images-slideshow">
+                  <div className="yumgo-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
