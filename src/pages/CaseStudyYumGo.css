@@ -555,6 +555,8 @@
     padding: var(--spacing-sm);
     background-color: hsl(256, 70%, 95%);
     border-radius: 12px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Ensure slideshow images maintain their styling */
@@ -572,6 +574,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     max-width: 250px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1280,6 +1284,8 @@
   .yumgo-solution-item.reverse {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .solution-item.reverse .solution-text,
@@ -1290,6 +1296,16 @@
   .solution-item.reverse .solution-visual,
   .yumgo-solution-item.reverse .yumgo-visual {
     order: 2;
+  }
+
+  .yumgo-visual {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .yumgo-image-container {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .solution-visual {
