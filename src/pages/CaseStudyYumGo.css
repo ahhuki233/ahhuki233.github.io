@@ -513,8 +513,8 @@
   display: none;
 }
 
-/* YumGo Images Slideshow */
-.yumgo-images-slideshow {
+/* YumGo Solution Images Slideshow */
+.yumgo-solution-images-slideshow {
   display: none;
 }
 
@@ -542,7 +542,7 @@
   }
 
   .solution-images-slideshow,
-  .yumgo-images-slideshow {
+  .yumgo-solution-images-slideshow {
     display: block;
   }
 

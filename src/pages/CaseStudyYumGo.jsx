@@ -136,7 +136,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="yumgo-images-slideshow">
+                  <div className="yumgo-solution-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
@@ -207,7 +207,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="yumgo-images-slideshow">
+                  <div className="yumgo-solution-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
@@ -275,7 +275,7 @@ const CaseStudyYumGo = () => {
                   </div>
 
                   {/* Mobile: Slideshow */}
-                  <div className="yumgo-images-slideshow">
+                  <div className="yumgo-solution-images-slideshow">
                     <ImageSlideshow
                       images={[
                         {
