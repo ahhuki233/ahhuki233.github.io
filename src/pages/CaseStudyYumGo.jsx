@@ -657,7 +657,7 @@ const CaseStudyYumGo = () => {
               <h3 className="content-title">Outcome</h3>
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
                 <li>Users can discover restaurants using dietary filters with no errors;</li>
-                <li>Book tables and navigate to restaurants in one app.</li>
+                <li>User feedback emphasized positive reactions to the engaging app interaction and the user-friendly approach for exploring local food and booking tables.</li>
               </ul>
             </div>
 
