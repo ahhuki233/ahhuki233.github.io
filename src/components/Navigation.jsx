@@ -20,7 +20,7 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
   ]
 
   const resumeLink = {
-    href: 'https://drive.google.com/file/d/1ZkmUMAwO08Ppb7SkKpx5jCKhzM7OudJU/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/17i3Bo0CGX_zb3zAGTESeX5qL5ccMN2jF/view?usp=sharing',
     label: 'Resume'
   }
 
