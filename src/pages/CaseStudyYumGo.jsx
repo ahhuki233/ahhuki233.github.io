@@ -156,7 +156,7 @@ const CaseStudyYumGo = () => {
                 </div>
               </div>
 
-              <div className="solution-text">
+              <div className="yumgo-solution-text">
                 <div className="solution-header">
                   {/* <span className="solution-number">01</span> */}
                   <h3 className="solution-title">Cultural & Local Guide</h3>
@@ -190,7 +190,7 @@ const CaseStudyYumGo = () => {
               </div>
             </article>
 
-            <article className="yumgo-solution-item reverse">
+            <article className="yumgo-solution-item yumgo-reverse">
               <div className="yumgo-visual">
                 <div className="yumgo-image-container">
                   {/* Desktop: Grid view */}
@@ -227,7 +227,7 @@ const CaseStudyYumGo = () => {
                 </div>
               </div>
 
-              <div className="solution-text">
+              <div className="yumgo-solution-text">
                 <div className="solution-header">
                   {/* <span className="solution-number">02</span> */}
                   <h3 className="solution-title">Filter icons for search and restaurant details</h3>
@@ -295,7 +295,7 @@ const CaseStudyYumGo = () => {
                 </div>
               </div>
 
-              <div className="solution-text">
+              <div className="yumgo-solution-text">
                 <div className="solution-header">
                   {/* <span className="solution-number">03</span> */}
                   <h3 className="solution-title">Restaurant Details</h3>

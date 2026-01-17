@@ -841,7 +841,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.yumgo-solution-item.reverse {
+.yumgo-solution-item.yumgo-reverse {
   grid-template-columns: 1fr 1fr;
 }
 
@@ -849,7 +849,7 @@
   order: 2;
 }
 
-.yumgo-solution-item.reverse .solution-text {
+.yumgo-solution-item.yumgo-reverse .yumgo-solution-text {
   order: 2;
 }
 
@@ -857,7 +857,7 @@
   order: 1;
 }
 
-.yumgo-solution-item.reverse .yumgo-visual {
+.yumgo-solution-item.yumgo-reverse .yumgo-visual {
   order: 1;
 }
 
@@ -961,7 +961,8 @@
   flex-shrink: 0;
 }
 
-.solution-text {
+.solution-text,
+.yumgo-solution-text {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1281,21 +1282,26 @@
   .solution-item,
   .solution-item.reverse,
   .yumgo-solution-item,
-  .yumgo-solution-item.reverse {
+  .yumgo-solution-item.yumgo-reverse {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
     max-width: 100%;
     overflow: hidden;
   }
 
-  .solution-item.reverse .solution-text,
-  .yumgo-solution-item.reverse .solution-text {
-    order: 1;
+  /* On mobile, always show images above text */
+  .solution-item .solution-visual,
+  .solution-item.reverse .solution-visual,
+  .yumgo-solution-item .yumgo-visual,
+  .yumgo-solution-item.yumgo-reverse .yumgo-visual {
+    order: 1 !important;
   }
 
-  .solution-item.reverse .solution-visual,
-  .yumgo-solution-item.reverse .yumgo-visual {
-    order: 2;
+  .solution-item .solution-text,
+  .solution-item.reverse .solution-text,
+  .yumgo-solution-item .yumgo-solution-text,
+  .yumgo-solution-item.yumgo-reverse .yumgo-solution-text {
+    order: 2 !important;
   }
 
   .yumgo-visual {
