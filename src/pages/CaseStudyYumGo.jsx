@@ -12,6 +12,7 @@ import yumgoRestaurantDetails2 from '../assets/images/yumgo-restaurant-details-2
 import yumgoPersona1 from '../assets/images/yumgo-persona-1.png'
 import yumgoPersona2 from '../assets/images/yumgo-persona-2.png'
 import yumgoStoryboard from '../assets/images/yumgo-storyboard.jpeg'
+import yumgoFinalSketch from '../assets/images/yumgo-final-sketch.jpg'
 import yumgoBooking1 from '../assets/images/yumgo-booking-1.png'
 import yumgoBooking2 from '../assets/images/yumgo-booking-2.png'
 
@@ -452,30 +453,7 @@ const CaseStudyYumGo = () => {
             </article>
           </div>
 
-          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Design Goals</h3>
-
-          <div className="design-goals">
-            <div className="design-goal-item">
-              <span className="goal-number">01</span>
-              <h4 className="goal-title">Personalized & Relevant Results</h4>
-              <p className="goal-text">Tailor recommendations with profiles, filters, allergen options, and AI suggestions.</p>
-            </div>
-            <div className="design-goal-item">
-              <span className="goal-number">02</span>
-              <h4 className="goal-title">Inclusion & Cultural Mediation</h4>
-              <p className="goal-text">Support translation, cultural guidance, and group decision-making.</p>
-            </div>
-            <div className="design-goal-item">
-              <span className="goal-number">03</span>
-              <h4 className="goal-title">Reliability & Trustworthiness</h4>
-              <p className="goal-text">Provide verified info, transparent suggestions, and real-time alerts.</p>
-            </div>
-            <div className="design-goal-item">
-              <span className="goal-number">04</span>
-              <h4 className="goal-title">End-to-End Support</h4>
-              <p className="goal-text">Optimize the full dining journey with wishlist, routing, and social media cues.</p>
-            </div>
-          </div>
+    
 
           <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>User Personas</h3>
           <p className="content-paragraph">
@@ -534,6 +512,47 @@ const CaseStudyYumGo = () => {
           <p className="content-paragraph" style={{ marginTop: 'var(--spacing-md)' }}>
             <strong>Frame 1-2:</strong> The traveler arrives in Toronto with luggage, excited to explore, but feels frustrated trying to find suitable meat-free food options. <strong>Frame 3-5:</strong> They discover the "FindEat" app, use dietary filters like gluten-free and vegan to find a nearby restaurant, and quickly reserve a spot just a one-minute walk away. <strong>Frame 6:</strong> They enjoy the meal and leave a 5-star review on the app.
           </p>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>UI Flow</h3>
+          <p className="content-paragraph">
+            After gathering commonality and ideas from the low-fidelity sketches created by my team members, I synthesized the key concepts into this comprehensive UI flow diagram. This sketch helped align the team on the overall navigation structure and user journey before moving into higher-fidelity wireframes.
+          </p>
+
+          <div className="storyboard-image-wrapper">
+            <img
+              src={yumgoFinalSketch}
+              alt="YumGo UI flow diagram showing comprehensive user journey and navigation structure"
+              className="storyboard-image"
+            />
+          </div>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Design Goals</h3>
+          <p className="content-paragraph">
+            Based on our research insights, we established four design goals to guide our solution: creating a personalized experience, ensuring inclusivity across cultures, building reliability and trust, and providing end-to-end support throughout the dining journey.
+          </p>
+
+          <div className="design-goals">
+            <div className="design-goal-item">
+              <span className="goal-number">01</span>
+              <h4 className="goal-title">Personalized & Relevant Results</h4>
+              <p className="goal-text">Tailor recommendations with profiles, filters, allergen options, and AI suggestions.</p>
+            </div>
+            <div className="design-goal-item">
+              <span className="goal-number">02</span>
+              <h4 className="goal-title">Inclusion & Cultural Mediation</h4>
+              <p className="goal-text">Support translation, cultural guidance, and group decision-making.</p>
+            </div>
+            <div className="design-goal-item">
+              <span className="goal-number">03</span>
+              <h4 className="goal-title">Reliability & Trustworthiness</h4>
+              <p className="goal-text">Provide verified info, transparent suggestions, and real-time alerts.</p>
+            </div>
+            <div className="design-goal-item">
+              <span className="goal-number">04</span>
+              <h4 className="goal-title">End-to-End Support</h4>
+              <p className="goal-text">Optimize the full dining journey with wishlist, routing, and social media cues.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -544,9 +563,23 @@ const CaseStudyYumGo = () => {
         <div className="container">
           <h2 className="section-heading">Design & Test: Iterative Testing & Adaptation</h2>
 
-   <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Usability Test</h3>
+      
+            <div>
+              <h3 className="content-title">Design Collaboration</h3>
+              <p className="content-paragraph">
+               I collaborated closely with the team during the wireframe and prototype phase, contributing design ideas for the Learn About page and providing clarifications to ensure smooth execution and alignment.
+              </p>
+              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+                <li>Created and led UI sketches before translating them into Figma wireframes</li>
+    <li>Conducted usability tests and gathered feedback to refine designs</li>
+    <li>Maintained continuous communication with teammates to ensure design consistency</li>
+    <li>Ensured final designs aligned with project goals and user needs</li>
+              </ul>
+            </div>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Usability Test</h3>
           <p className="section-intro">
-            I ran two think-aloud usability tests, where participants verbalize their thoughts while using the product, on the <a href="https://www.figma.com/proto/yWp71F0guPfT0ayefFTor3/INF1611_PRA0101_A5_Group-8_-WireframePrototype_2025-11-03?node-id=1-2&t=Mn2DQxJktr0i7ZK2-1" target="_blank" rel="noopener noreferrer" className="inline-link">mid-fidelity prototype</a> with two participants.
+            I conducted think-aloud usability tests with two participants to evaluate the <a href="https://www.figma.com/proto/yWp71F0guPfT0ayefFTor3/INF1611_PRA0101_A5_Group-8_-WireframePrototype_2025-11-03?node-id=1-2&t=Mn2DQxJktr0i7ZK2-1" target="_blank" rel="noopener noreferrer" className="inline-link">mid-fidelity prototype</a>, capturing real-time insights as they navigated the system.
           </p>
 
           <p className="content-paragraph" style={{ marginBottom: 'var(--spacing-md)' }}>
@@ -570,34 +603,6 @@ const CaseStudyYumGo = () => {
                   Navigate to the restaurant's page and post feedback easily and intuitively.
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="content-block">
-            <div>
-              <h3 className="content-title">Design Collaboration</h3>
-              <p className="content-paragraph">
-               I collaborated closely with the team during the wireframe and prototype phase, contributing design ideas for the Learn About page and providing clarifications to ensure smooth execution and alignment.
-              </p>
-              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>Created and led UI sketches before translating them into Figma wireframes</li>
-    <li>Conducted usability tests and gathered feedback to refine designs</li>
-    <li>Maintained continuous communication with teammates to ensure design consistency</li>
-    <li>Ensured final designs aligned with project goals and user needs</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="content-title">Usability Testing</h3>
-              <p className="content-paragraph">
-                I conducted moderated usability testing sessions with 2 participants matching our target user personas to identify areas for improvement.
-              </p>
-              <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>2 participants</li>
-                <li>Task-based scenarios covering discovery, filtering, and booking</li>
-                <li>Think-aloud protocol to capture user thoughts and pain points</li>
-                <li>Post-test surveys measuring satisfaction and ease of use</li>
-              </ul>
             </div>
           </div>
 
@@ -658,15 +663,18 @@ const CaseStudyYumGo = () => {
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
                 <li>Users can discover restaurants using dietary filters with no errors;</li>
                 <li>User feedback emphasized positive reactions to the engaging app interaction and the user-friendly approach for exploring local food and booking tables.</li>
+                <li>User commented that the familiar patterns such as layout inspired by Google Maps reduced the learning curve;</li>
+                <li>User feedback highlights the 'cultural tips' as a standout new feature that adds significant value for exloring a new place.</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="content-title">Impact</h3>
+              <h3 className="content-title">What I'd Do Differently</h3>
               <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
-                <li>User commented that the familiar patterns such as layout inspired by Google Maps reduced the learning curve;</li>
-                <li>Focused features such as group voting, cultural tips, and dietary filters improved usability;</li>
-                <li>Positive feedback from user testing confirmed the design decisions.</li>
+                <li>Conduct more extensive usability testing with a larger sample size to validate design decisions across diverse user groups;</li>
+                <li>Implement A/B testing for key features like the filter interface to compare different design approaches;</li>
+                <li>Gather quantitative metrics alongside qualitative feedback to measure task completion rates and time-on-task;</li>
+                <li>Test with users in actual travel contexts to better understand real-world usage patterns and pain points.</li>
               </ul>
             </div>
           </div>

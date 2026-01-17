@@ -383,7 +383,7 @@
   border-top: 4px solid var(--color-accent-purple);
 }
 
-.insight-card:nth-child(2) {
+/* .insight-card:nth-child(2) {
   border-top-color: var(--color-accent-orange);
 }
 
@@ -393,7 +393,7 @@
 
 .insight-card:nth-child(4) {
   border-top-color: var(--color-accent-purple);
-}
+} */
 
 .insight-number {
   font-size: var(--font-size-large);
