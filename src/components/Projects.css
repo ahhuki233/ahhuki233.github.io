@@ -24,12 +24,50 @@
   border-top: 4px solid var(--color-primary);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition-speed) var(--transition-easing),
+              box-shadow var(--transition-speed) var(--transition-easing),
+              border-top-color var(--transition-speed) var(--transition-easing);
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.project-card.accent-purple:hover,
+.project-card.accent-purple:focus-within {
+  border-top-color: var(--color-accent-purple);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15),
+              0 -4px 16px -4px rgba(167, 139, 250, 0.4);
+}
+
+.project-card.accent-orange:hover,
+.project-card.accent-orange:focus-within {
+  border-top-color: var(--color-accent-purple);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15),
+              0 -4px 16px -4px rgba(167, 139, 250, 0.4);
+}
+
+.project-card.accent-green:hover,
+.project-card.accent-green:focus-within {
+  border-top-color: var(--color-accent-green);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15),
+              0 -4px 16px -4px rgba(74, 222, 128, 0.4);
+}
+
+/* Keyboard focus indicator */
+.project-card:focus-within {
+  outline: 3px solid var(--color-accent-purple);
+  outline-offset: 4px;
 }
 
 /* Project Image */
 .project-image {
   flex: 0 0 50%;
   min-width: 400px;
+  overflow: hidden;
 }
 
 /* Multiple images grid */
@@ -62,7 +100,7 @@
 /* Single image layout */
 .project-images-grid.project-images-orange {
   grid-template-columns: 1fr;
-  background-color: hsl(27, 95%, 95%);
+  background-color: hsl(256, 70%, 95%);
   display: flex;
   justify-content: center;
 }
@@ -79,6 +117,14 @@
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 100%;
+  transition: box-shadow var(--transition-speed) var(--transition-easing),
+              transform var(--transition-speed) var(--transition-easing);
+}
+
+.project-card:hover .project-images-purple .project-image-wrapper,
+.project-card:focus-within .project-images-purple .project-image-wrapper {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .project-images-purple .project-image-img {
@@ -97,6 +143,15 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow var(--transition-speed) var(--transition-easing),
+              transform var(--transition-speed) var(--transition-easing);
+}
+
+.project-card:hover .project-images-orange .project-image-wrapper,
+.project-card:focus-within .project-images-orange .project-image-wrapper {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .project-images-orange .project-image-img {
@@ -128,7 +183,7 @@
 }
 
 .project-card.accent-orange {
-  border-top-color: var(--color-accent-orange);
+  border-top-color: var(--color-accent-purple);
 }
 
 .project-card.accent-green {
@@ -144,6 +199,16 @@
 .project-title {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--spacing-xs);
+  color: var(--color-primary);
+  transition: color var(--transition-speed) var(--transition-easing);
+}
+
+.project-card.accent-purple:hover .project-title,
+.project-card.accent-purple:focus-within .project-title,
+.project-card.accent-orange:hover .project-title,
+.project-card.accent-orange:focus-within .project-title,
+.project-card.accent-green:hover .project-title,
+.project-card.accent-green:focus-within .project-title {
   color: var(--color-primary);
 }
 
@@ -180,6 +245,22 @@
   color: var(--color-text);
   border-radius: 4px;
   border: 1px solid var(--color-text-light);
+  transition: background-color var(--transition-speed) var(--transition-easing),
+              border-color var(--transition-speed) var(--transition-easing),
+              transform var(--transition-speed) var(--transition-easing);
+}
+
+.project-card:hover .project-tag,
+.project-card:focus-within .project-tag {
+  background-color: var(--color-background-alt);
+  border-color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project-card:hover .project-tag,
+  .project-card:focus-within .project-tag {
+    transform: translateY(-1px);
+  }
 }
 
 /* Project Link */
@@ -188,23 +269,64 @@
   font-weight: 600;
   color: var(--color-primary);
   margin-top: auto;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
   width: fit-content;
+  transition: color var(--transition-speed) var(--transition-easing),
+              transform var(--transition-speed) var(--transition-easing);
+}
+
+.project-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Arrow animation on card hover */
+.project-card:hover .project-link,
+.project-card:focus-within .project-link {
+  transform: translateX(4px);
 }
 
 .project-card.accent-purple .project-link:hover,
-.project-card.accent-purple .project-link:focus {
-  color: var(--color-accent-purple);
-}
-
+.project-card.accent-purple .project-link:focus,
+.project-card.accent-purple:hover .project-link,
+.project-card.accent-purple:focus-within .project-link,
 .project-card.accent-orange .project-link:hover,
-.project-card.accent-orange .project-link:focus {
-  color: var(--color-accent-orange);
+.project-card.accent-orange .project-link:focus,
+.project-card.accent-orange:hover .project-link,
+.project-card.accent-orange:focus-within .project-link,
+.project-card.accent-green .project-link:hover,
+.project-card.accent-green .project-link:focus,
+.project-card.accent-green:hover .project-link,
+.project-card.accent-green:focus-within .project-link {
+  color: var(--color-primary);
 }
 
-.project-card.accent-green .project-link:hover,
-.project-card.accent-green .project-link:focus {
-  color: var(--color-accent-green);
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card:hover,
+  .project-card:focus-within,
+  .project-link,
+  .project-card:hover .project-link,
+  .project-card:focus-within .project-link,
+  .project-image-wrapper,
+  .project-card:hover .project-image-wrapper,
+  .project-card:focus-within .project-image-wrapper,
+  .project-tag,
+  .project-card:hover .project-tag,
+  .project-card:focus-within .project-tag {
+    transform: none !important;
+    animation: none !important;
+  }
+
+  /* Keep color and shadow changes for accessibility */
+  .project-card:hover,
+  .project-card:focus-within {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
 }
 
 /* Responsive Design */
@@ -308,24 +430,32 @@
   }
 }
 
-/* Hover effect enhancement */
-.project-card::before {
+/* Background highlight on hover */
+.project-card::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg,
-    var(--color-accent-purple),
-    var(--color-accent-orange),
-    var(--color-accent-green)
+  bottom: 0;
+  background: linear-gradient(135deg,
+    rgba(167, 139, 250, 0.03) 0%,
+    rgba(251, 146, 60, 0.03) 100%
   );
   opacity: 0;
   transition: opacity var(--transition-speed) var(--transition-easing);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.project-card:hover::before,
-.project-card:focus-within::before {
+.project-card:hover::after,
+.project-card:focus-within::after {
   opacity: 1;
+}
+
+/* Ensure content is above the overlay */
+.project-image,
+.project-content {
+  position: relative;
+  z-index: 1;
 }

@@ -58,7 +58,7 @@
 
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
 }
 
 .footer-link:hover::after,

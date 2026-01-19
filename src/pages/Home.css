@@ -73,8 +73,8 @@
 }
 
 .contact-link:hover {
-  color: var(--color-accent-purple);
-  text-decoration-color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
+  text-decoration-color: var(--color-accent-purple-dark);
 }
 
 /* Mobile Responsive */

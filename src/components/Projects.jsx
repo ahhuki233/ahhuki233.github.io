@@ -67,8 +67,10 @@ const Projects = () => {
             <article
               key={project.id}
               className={`project-card card accent-${project.accentColor}`}
+              role="article"
+              aria-labelledby={`project-title-${project.id}`}
             >
-              <div className="project-image">
+              <div className="project-image" aria-hidden="true">
                 {project.images && project.images.length > 0 ? (
                   <div className={`project-images-grid project-images-${project.accentColor}`}>
                     {/* Desktop: Grid view */}
@@ -103,7 +105,7 @@ const Projects = () => {
                 )}
               </div>
               <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
+                <h3 id={`project-title-${project.id}`} className="project-title">{project.title}</h3>
                 <p className="project-role">{project.role}</p>
                 <p className="project-description">{project.description}</p>
 

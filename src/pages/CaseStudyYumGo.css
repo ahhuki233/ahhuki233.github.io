@@ -29,8 +29,8 @@
 
 .breadcrumb-link:hover,
 .breadcrumb-link:focus {
-  color: var(--color-accent-purple);
-  text-decoration-color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
+  text-decoration-color: var(--color-accent-purple-dark);
 }
 
 .breadcrumb-link:focus-visible {
@@ -51,7 +51,7 @@
 
 /* Inline Links */
 .inline-link {
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -156,26 +156,16 @@
   margin-top: var(--spacing-sm);
 }
 
-.view-prototype-btn {
+.external-link-icon {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  font-size: var(--font-size-base);
-  font-weight: 500;
-  font-family: var(--font-family-sans);
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.15s ease;
+  margin-left: var(--spacing-xs);
+  font-size: var(--font-size-large);
+  vertical-align: middle;
+  transition: transform var(--transition-speed) var(--transition-easing);
 }
 
-.view-prototype-btn:hover {
-  background-color: #1f2937;
-}
-
-.view-prototype-btn:focus-visible {
-  outline: 2px solid var(--color-text);
-  outline-offset: 2px;
+.btn:hover .external-link-icon {
+  transform: translate(2px, -2px);
 }
 
 /* Image Placeholders */
@@ -615,7 +605,7 @@
 .method-icon {
   font-size: var(--font-size-xl);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   flex-shrink: 0;
   width: 50px;
   height: 50px;
@@ -723,7 +713,7 @@
 .stat-number {
   font-size: var(--font-size-2xl);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
 }
 
 .stat-label {
@@ -950,7 +940,7 @@
 .solution-number {
   font-size: var(--font-size-large);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   background-color: rgba(128, 90, 213, 0.1);
   width: 48px;
   height: 48px;
@@ -1001,7 +991,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-family-sans);
 }
@@ -1026,7 +1016,7 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-weight: 700;
 }
 
@@ -1044,7 +1034,7 @@
 .stat-large {
   font-size: var(--font-size-3xl);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   line-height: 1;
 }
 
@@ -1090,7 +1080,7 @@
 
 .quote-context {
   font-size: var(--font-size-small);
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-weight: 700;
   margin: 0;
   margin-top: var(--spacing-sm);
@@ -1101,7 +1091,7 @@
   text-align: center;
   font-size: var(--font-size-xl);
   font-weight: 600;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   margin-top: var(--spacing-xl);
   padding: var(--spacing-md) 0;
 }
@@ -1172,7 +1162,7 @@
 
 .testimonial-quote::before {
   content: '"';
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-size: var(--font-size-3xl);
   line-height: 0;
   margin-right: var(--spacing-xs);
@@ -1225,7 +1215,7 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-size: var(--font-size-xl);
   line-height: 1;
 }
@@ -1366,9 +1356,8 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .view-prototype-btn {
+  .hero-actions .btn {
     width: 100%;
-    align-self: stretch;
   }
 
   .section-heading {

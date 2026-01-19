@@ -29,8 +29,8 @@
 
 .breadcrumb-link:hover,
 .breadcrumb-link:focus {
-  color: var(--color-accent-purple);
-  text-decoration-color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
+  text-decoration-color: var(--color-accent-purple-dark);
 }
 
 .breadcrumb-link:focus-visible {
@@ -345,7 +345,7 @@
 .method-icon {
   font-size: var(--font-size-xl);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   flex-shrink: 0;
   width: 50px;
   height: 50px;
@@ -432,13 +432,13 @@
 .stat-number {
   font-size: var(--font-size-2xl);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
 }
 
 .kds-stat-label {
   font-size: var(--font-size-base);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   display: block;
@@ -546,7 +546,7 @@
 .kds-iteration-number {
   font-size: var(--font-size-base);
   font-weight: 700;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -574,7 +574,7 @@
 
 .kds-iteration-arrow {
   font-size: var(--font-size-3xl);
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   align-self: center;
   margin-top: 120px;
   font-weight: 300;
@@ -658,7 +658,7 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-weight: 700;
 }
 
@@ -667,7 +667,7 @@
   text-align: center;
   font-size: var(--font-size-xl);
   font-weight: 600;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   margin-top: var(--spacing-xl);
   padding: var(--spacing-md) 0;
 }
@@ -738,7 +738,7 @@
 
 .testimonial-quote::before {
   content: '"';
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-size: var(--font-size-3xl);
   line-height: 0;
   margin-right: var(--spacing-xs);
@@ -791,7 +791,7 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   font-size: var(--font-size-xl);
   line-height: 1;
 }

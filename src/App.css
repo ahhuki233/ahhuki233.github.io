@@ -131,8 +131,8 @@ section:first-of-type {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: var(--color-accent-purple);
-  border-color: var(--color-accent-purple);
+  background-color: var(--color-accent-purple-dark);
+  border-color: var(--color-accent-purple-dark);
 }
 
 /* Card Styles */

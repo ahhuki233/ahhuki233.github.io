@@ -102,7 +102,7 @@
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--color-accent-purple);
+  color: var(--color-accent-purple-dark);
   transform: translateY(-2px);
 }
 

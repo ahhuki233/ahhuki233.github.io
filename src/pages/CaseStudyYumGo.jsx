@@ -70,12 +70,14 @@ const CaseStudyYumGo = () => {
 
             <div className="hero-actions">
               <a
-                 target="_blank"
                 href="https://www.figma.com/proto/xklBS0ojXLmnUPRxRkd261/INF1611_PRA0101_A8_XueerXu_FinalPrototype_2025-12-01?node-id=112-5258&t=19oNj9l7xCmVXKgi-1"
-                className="view-prototype-btn"
-                aria-label="View YumGo interactive prototype"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View YumGo interactive prototype (opens in new tab)"
               >
-                View Prototype →
+                View Prototype
+                <span className="external-link-icon" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
