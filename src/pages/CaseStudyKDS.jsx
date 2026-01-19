@@ -6,6 +6,9 @@ import kdsExpoStation from '../assets/images/kds-expo-station.png'
 import kdsPickupStation from '../assets/images/kds-pickup-station.png'
 import kdsLocalConfigBumbar from '../assets/images/kds-local-config-bumbar.png'
 import kdsGlobalConfigOrderCard from '../assets/images/kds-gloal-config-order-card.png'
+import kdsUserFlowDiagram from '../assets/images/kds-user-flow-diagram.png'
+import kdsIteration1 from '../assets/images/kds-expo-iteration-1.png'
+import kdsIteration2 from '../assets/images/kds-expo-iteration-2.png'
 
 const CaseStudyKDS = () => {
   useEffect(() => {
@@ -82,7 +85,7 @@ const CaseStudyKDS = () => {
             <div className="glance-item">
               <h3 className="glance-title">The Opportunity</h3>
               <p className="glance-text">
-              The client needed a scalable Kitchen Display System (KDS) for high-volume quick-service restaurants across Canada. The system had to support real-time kitchen operations, customer pickup displays, and flexible internal configuration while balancing complex requirements and diverse stakeholder needs.
+              The client needed a scalable Kitchen Display System (KDS) for high-volume quick-service restaurants (QSR) across Canada. The system had to support real-time kitchen operations, customer pickup displays, and flexible internal configuration while balancing complex requirements and diverse stakeholder needs.
               </p>
             </div>
 
@@ -273,7 +276,7 @@ const CaseStudyKDS = () => {
       {/* Research Process */}
       <section className="case-study-section research-process">
         <div className="container">
-          <h2 className="section-heading">Understanding the Problem</h2>
+          <h2 className="section-heading">Discover: Understanding the Problem</h2>
 
           <div className="content-text">
             <h3 className="content-title">Research Methods</h3>
@@ -321,178 +324,189 @@ const CaseStudyKDS = () => {
       </section>
 
       {/* Coming Soon */}
-      <section className="case-study-section" style={{ textAlign: 'center', padding: 'var(--spacing-xl) 0' }}>
+      {/* <section className="case-study-section" style={{ textAlign: 'center', padding: 'var(--spacing-xl) 0' }}>
         <div className="container">
           <p style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-text-light)', fontStyle: 'italic' }}>
             Coming soon...
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Key Insights */}
-      {/* <section className="case-study-section key-insights">
+      <section className="case-study-section key-insights">
         <div className="container">
-          <h2 className="section-heading">Key Research Insights</h2>
+          <h2 className="section-heading">Define: Key Research Insights</h2>
+
+          {/* <p className="content-paragraph" style={{ marginBottom: 'var(--spacing-lg)' }}>
+            Through contextual inquiry in three restaurant kitchens, meetings with the Panasonic team, and competitive analysis of existing KDS solutions, we identified four critical themes that shaped our design approach. These insights revealed the gap between current kitchen operations and the ideal state, highlighting specific pain points that our solution needed to address.
+          </p> */}
 
           <div className="insights-grid">
             <article className="insight-card">
               <div className="insight-number">01</div>
               <h3 className="insight-title">Speed is Critical</h3>
               <p className="insight-description">
-                "We don't have time to click through menus. Everything needs to be visible at a glance and accessible with one touch."
+              From my observations during peak hours, kitchen staff relied on quick, at-a-glance information rather than navigating through the system.
               </p>
               <div className="insight-stat">
-                <span className="stat-number">85%</span>
-                <span className="stat-label">of kitchen staff cited speed and simplicity as their top priority for any new system</span>
+                <span className="kds-stat-label">Key Finding</span>
+                <span className="stat-label">Competitive analysis revealed successful KDS systems prioritized one-touch interactions and minimal navigation depth</span>
               </div>
             </article>
 
             <article className="insight-card">
               <div className="insight-number">02</div>
-              <h3 className="insight-title">Visual Hierarchy Matters</h3>
+              <h3 className="insight-title">Visual Hierarchy is Essential</h3>
               <p className="insight-description">
-                "I need to know what's urgent without reading every ticket. Color and position tell me what to cook first."
+                Observations in fast-paced kitchens showed staff scanning displays for urgent orders using visual patterns rather than reading timestamps or order numbers sequentially.
               </p>
               <div className="insight-stat">
-                <span className="stat-number">12/15</span>
-                <span className="stat-label">staff members relied on visual cues rather than timestamps to prioritize orders</span>
+                <span className="kds-stat-label">Design Implication</span>
+                <span className="stat-label">Color-coding and spatial organization emerged as critical for instant prioritization during high-volume service</span>
               </div>
             </article>
 
             <article className="insight-card">
               <div className="insight-number">03</div>
-              <h3 className="insight-title">Station Communication</h3>
+              <h3 className="insight-title">Flexible Configuration Needed</h3>
               <p className="insight-description">
-                "The biggest issue is coordinating with other stations. We're all working on different parts of the same order."
+                Client requirements emphasized the need for a universal design that could adapt to different fast-food chains across Canada, each with unique kitchen layouts and workflows.
               </p>
               <div className="insight-stat">
-                <span className="stat-number">60%</span>
-                <span className="stat-label">of observed delays were caused by poor coordination between kitchen stations</span>
+                <span className="kds-stat-label">Client Requirement</span>
+                <span className="stat-label">System must support both brand-level standards and store-level customization for different operational needs</span>
               </div>
             </article>
 
-            <article className="insight-card">
+            {/* <article className="insight-card">
               <div className="insight-number">04</div>
-              <h3 className="insight-title">Durability Requirements</h3>
+              <h3 className="insight-title">Physical Integration Constraints</h3>
               <p className="insight-description">
-                "Kitchen environments are tough. Heat, moisture, and grease destroy regular equipment. It needs to be built for this."
+                Kitchen environments present unique challenges with heat, moisture, and limited counter space. Integration with existing bump bars was a non-negotiable client requirement.
               </p>
               <div className="insight-stat">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">of observed kitchens had environmental challenges requiring specialized hardware considerations</span>
+                <span className="kds-stat-label">Technical Constraint</span>
+                <span className="stat-label">Solution must work seamlessly with physical bump bars while supporting touchscreen and customer-facing pickup displays</span>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* Design Process */}
-      {/* <section className="case-study-section design-process">
+   <section className="case-study-section design-process">
         <div className="container">
           <h2 className="section-heading">Design Process</h2>
 
-          <div className="process-timeline">
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Information Architecture & Wireframing</h3>
-                <p className="timeline-description">
-                  Developed multiple layout concepts optimized for large touchscreen displays. Created information hierarchies that prioritize urgent orders while maintaining visibility of all active items. Designed station-specific views that filter information based on kitchen role and responsibilities.
-                </p>
-                <div className="image-placeholder medium">
-                  <span>Initial Wireframes</span>
-                  <p>Layout concepts and information architecture</p>
-                </div>
+          <div>
+            <h3 className="content-title">User Flow Diagram</h3>
+            <p className="content-paragraph">
+              I mapped the complete user journey from order placement to pickup, identifying all touchpoints across different user roles: kitchen staff, customers, and managers. This diagram helped visualize the entire system workflow.
+            </p>
+            <div className="process-image-container">
+              <img
+                src={kdsUserFlowDiagram}
+                alt="KDS user flow diagram showing order journey from placement to pickup"
+                className="process-image"
+              />
+            </div>
+          </div>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Visual Design & Interaction Patterns</h3>
+          <p className="content-paragraph">
+            I designed a high-contrast interface optimized for glance-ability in bright kitchen environments. Created color-coded priority systems and large touch targets for gloved hands. Developed interaction patterns that minimize steps and support muscle memory for repeated actions.
+          </p>
+          <ul className="content-paragraph" style={{ paddingLeft: 'var(--spacing-md)' }}>
+            <li>High-contrast color system for visibility in bright lighting</li>
+            <li>Large touch targets optimized for gloved hands</li>
+            <li>Color-coded priority indicators for urgent orders</li>
+            <li>Minimal navigation depth for one-touch interactions</li>
+          </ul>
+
+          <h3 className="content-title" style={{ marginTop: 'var(--spacing-xl)' }}>Prototype Testing & Iteration</h3>
+          <p className="content-paragraph">
+           I conducted internal usability testing with developers and clients using interactive prototypes to evaluate workflow efficiency and gather real-time feedback for design refinement.
+          </p>
+
+          <h4 className="content-title" style={{ marginTop: 'var(--spacing-lg)', fontSize: 'var(--font-size-xl)' }}>Key Iterations</h4>
+          <p className="content-paragraph" style={{ marginTop: 'var(--spacing-sm)', marginBottom: 'var(--spacing-sm)' }}>
+            <strong>EXPO Screen Evolution:</strong> Through iterative testing, I refined the design by minimizing color usage to reduce visual clutter, optimizing gaps between order cards for better scanning, and maximizing font sizes for improved readability in fast-paced kitchen environments.
+          </p>
+
+          <div className="kds-iterations-container">
+            <div className="kds-iteration-item">
+              <div className="kds-iteration-number">Iteration 1</div>
+              <div className="kds-iteration-image-container">
+                <img
+                  src={kdsIteration1}
+                  alt="KDS iteration 1 - Initial design concept"
+                  className="kds-iteration-image"
+                />
               </div>
+              <p className="kds-iteration-description">
+                Initial design concept focusing on basic order card layout and information hierarchy.
+              </p>
             </div>
 
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Visual Design & Interaction Patterns</h3>
-                <p className="timeline-description">
-                  Designed a high-contrast interface optimized for glance-ability in bright kitchen environments. Created color-coded priority systems and large touch targets for gloved hands. Developed interaction patterns that minimize steps and support muscle memory for repeated actions.
-                </p>
-                <div className="image-placeholder medium">
-                  <span>Visual Design</span>
-                  <p>High-fidelity mockups and design system</p>
-                </div>
+            <div className="kds-iteration-arrow" aria-hidden="true">→</div>
+
+            <div className="kds-iteration-item">
+              <div className="kds-iteration-number">Iteration 2</div>
+              <div className="kds-iteration-image-container">
+                <img
+                  src={kdsIteration2}
+                  alt="KDS iteration 2 - Refined visual hierarchy"
+                  className="kds-iteration-image"
+                />
               </div>
+              <p className="kds-iteration-description">
+                Refined visual hierarchy with improved color coding and spacing based on initial feedback.
+              </p>
             </div>
 
-            <div className="timeline-item">
-              <div className="timeline-marker" aria-hidden="true"></div>
-              <div className="timeline-content">
-                <h3 className="timeline-title">Prototype Testing & Iteration</h3>
-                <p className="timeline-description">
-                  Conducted usability testing with kitchen staff using interactive prototypes. Simulated peak service scenarios to validate workflow efficiency. Refined visual hierarchy, simplified interactions, and adjusted timing based on real-world feedback from multiple testing sessions.
-                </p>
-                <div className="image-placeholder medium">
-                  <span>Testing Sessions</span>
-                  <p>Prototype testing with kitchen staff</p>
-                </div>
+            <div className="kds-iteration-arrow" aria-hidden="true">→</div>
+
+            <div className="kds-iteration-item">
+              <div className="kds-iteration-number">Final Design</div>
+              <div className="kds-iteration-image-container">
+                <img
+                  src={kdsExpoStation}
+                  alt="KDS final design - EXPO station display"
+                  className="kds-iteration-image"
+                />
               </div>
+              <p className="kds-iteration-description">
+                Final design with optimized touch targets, high-contrast colors, and real-time priority indicators.
+              </p>
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* Development Section */}
-      {/* <section className="case-study-section development">
+     <section className="case-study-section development">
         <div className="container">
           <h2 className="section-heading">Development & Implementation</h2>
 
-          <div className="content-block">
+          <div className="">
             <div className="content-text">
               <h3 className="content-title">Technical Implementation</h3>
               <p className="content-paragraph">
-                As one of the frontend developers on this project, I worked with .NET 8 to bring the design vision to life. The development process involved close collaboration with backend engineers to ensure seamless real-time communication and reliable order processing.
+               This project marked my first experience with .NET 8 Blazor, where I applied it as a frontend developer to implement the design vision while working closely with backend engineers to ensure a smooth, real-time ordering experience.
               </p>
 
               <div className="research-methods">
-                <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">01</div>
+                <div className="">
                   <h4 className="method-title">Component Architecture</h4>
                   <p className="method-description">
-                    Built reusable components for order cards, station views, and control panels using React and .NET 8. Implemented state management to handle real-time updates across multiple displays simultaneously.
+                    I extensively used Fluent UI components to build consistent and accessible interfaces for order cards, station views, and control panels. Leveraging Fluent UI helped ensure visual clarity, interaction consistency, and fast comprehension, allowing staff to quickly understand order status without unnecessary interaction.
                   </p>
                 </div>
-
-                <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">02</div>
-                  <h4 className="method-title">Real-Time Synchronization</h4>
-                  <p className="method-description">
-                    Integrated SignalR for WebSocket-based real-time communication, ensuring instant order updates across all kitchen displays with minimal latency even during peak service hours.
-                  </p>
-                </div>
-
-                <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">03</div>
-                  <h4 className="method-title">Performance Optimization</h4>
-                  <p className="method-description">
-                    Optimized rendering performance to handle 50+ simultaneous orders without lag. Implemented efficient data structures and caching strategies to maintain responsiveness on touchscreen hardware.
-                  </p>
-                </div>
-
-                <div className="method-card">
-                  <div className="method-icon" aria-hidden="true">04</div>
-                  <h4 className="method-title">POS Integration</h4>
-                  <p className="method-description">
-                    Developed API integrations with popular POS systems to ensure seamless order flow. Created fallback mechanisms and error handling to maintain kitchen operations even during connectivity issues.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="content-visual">
-              <div className="image-placeholder large">
-                <span>Development Process</span>
-                <p>Code architecture and integration workflow</p>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* Solution Deep Dive */}
       {/* <section className="case-study-section solution-details">
@@ -632,9 +646,9 @@ const CaseStudyKDS = () => {
       </section> */}
 
       {/* Learnings & Reflection */}
-      {/* <section className="case-study-section learnings">
+       <section className="case-study-section learnings">
         <div className="container">
-          <h2 className="section-heading">Key Learnings & Next Steps</h2>
+          <h2 className="section-heading">Key Learnings</h2>
 
           <div className="learnings-content">
             <div className="learning-block">
@@ -650,31 +664,31 @@ const CaseStudyKDS = () => {
                   <strong>Balance design and development:</strong> Wearing both designer and developer hats required constant communication between roles. Technical constraints informed design decisions, while design vision pushed technical innovation.
                 </li>
                 <li>
-                  <strong>Performance under pressure:</strong> Developing for real-time systems during peak service hours taught me the critical importance of performance optimization, error handling, and fallback mechanisms in production environments.
+                  <strong>Collaboration and communication:</strong> Working closely with stakeholders, managers, and back-end developers taught me the importance of clear communication and continuous alignment. Regular check-ins with the client ensured the design met business requirements, while ongoing collaboration with developers helped bridge the gap between design vision and technical implementation.
                 </li>
               </ul>
             </div>
 
             <div className="learning-block">
-              <h3 className="learning-title">Future Enhancements</h3>
+              <h3 className="learning-title">Skills Earned</h3>
               <ul className="learning-list" role="list">
                 <li>
-                  <strong>Predictive analytics:</strong> Use machine learning to predict preparation times based on historical data and current kitchen load.
+                  <strong>.NET 8:</strong> Developed frontend components and implemented real-time features using the latest .NET framework.
                 </li>
                 <li>
-                  <strong>Voice integration:</strong> Explore hands-free voice commands for marking items complete or requesting help during busy periods.
+                  <strong>FluentUI Library:</strong> Leveraged Microsoft's FluentUI component library to build consistent user interfaces.
                 </li>
                 <li>
-                  <strong>Inventory integration:</strong> Connect with inventory systems to flag when ingredients are running low and suggest 86-ing menu items proactively.
+                  <strong>Figma Prototyping:</strong> Created interactive prototypes for stakeholder presentations.
                 </li>
                 <li>
-                  <strong>Multi-location support:</strong> Enable central kitchen coordination for restaurant groups with multiple locations sharing preparation facilities.
+                  <strong>MySQL Workbench:</strong> Used MySQL Workbench to verify API actions and ensure new data, modified data, and deleted data displayed correctly in the database.
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* Project Navigation */}
       <section className="case-study-section project-navigation">

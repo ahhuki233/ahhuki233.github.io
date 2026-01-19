@@ -671,7 +671,7 @@
 }
 
 .insight-card {
-  background-color: var(--color-background);
+  background-color: var(--color-background-alt);
   padding: var(--spacing-sm);
   border-radius: 8px;
   border-top: 4px solid var(--color-accent-purple);

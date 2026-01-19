@@ -41,7 +41,7 @@ const CaseStudyYumGo = () => {
                 YumGo: Restaurant Discovery & Booking
               </h1>
               <p className="case-study-subtitle">
-                A user-centered mobile app that reimagines restaurant discovery through intuitive map-based interactions and seamless booking experiences.
+                A user-centered mobile app that reimagines restaurant discovery through intuitive map-based interactions and straightfoward booking experiences.
               </p>
             </div>
 
@@ -655,7 +655,7 @@ const CaseStudyYumGo = () => {
       {/* Results & Impact */}
       <section className="case-study-section results">
         <div className="container">
-          <h2 className="section-heading">Results & Impact</h2>
+          <h2 className="section-heading">Results & Reflection</h2>
 
           <div className="content-block">
             <div>
