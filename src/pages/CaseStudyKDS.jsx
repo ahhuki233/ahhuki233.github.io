@@ -54,7 +54,7 @@ const CaseStudyKDS = () => {
               </div>
               <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
-                <dd className="meta-value">Lead Designer & Frontend Developer</dd>
+                <dd className="meta-value">Lead Designer & Front-end Developer</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Technologies</dt>
@@ -492,7 +492,7 @@ const CaseStudyKDS = () => {
             <div className="content-text">
               <h3 className="content-title">Technical Implementation</h3>
               <p className="content-paragraph">
-               This project marked my first experience with .NET 8 Blazor, where I applied it as a frontend developer to implement the design vision while working closely with backend engineers to ensure a smooth, real-time ordering experience.
+               This project marked my first experience with .NET 8 Blazor, where I applied it as a front-end developer to implement the design vision while working closely with back-end engineers to ensure a smooth, real-time ordering experience.
               </p>
 
               <div className="research-methods">
@@ -673,7 +673,7 @@ const CaseStudyKDS = () => {
               <h3 className="learning-title">Skills Earned</h3>
               <ul className="learning-list" role="list">
                 <li>
-                  <strong>.NET 8:</strong> Developed frontend components and implemented real-time features using the latest .NET framework.
+                  <strong>.NET 8:</strong> Developed front-end components and implemented real-time features using the latest .NET framework.
                 </li>
                 <li>
                   <strong>FluentUI Library:</strong> Leveraged Microsoft's FluentUI component library to build consistent user interfaces.

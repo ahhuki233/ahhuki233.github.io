@@ -64,7 +64,7 @@ const AboutPage = () => {
             </p>
             <p>
               I've always been fascinated by the intersection of human behavior
-              and technology. I started my career as a graphic designer but quickly adapted to frontend development, gaining 4 years of hands-on experience building websites. </p>
+              and technology. I started my career as a graphic designer but quickly adapted to front-end development, gaining 4 years of hands-on experience building websites. </p>
                <p>My approach to design is rooted in curiosity. I like to explore and seek out anything and everything
               that helps me understand how people interact with the digital world.
             </p>

@@ -23,9 +23,9 @@ const Projects = () => {
       id: 2,
       title: 'Kitchen Display System',
       description:
-        'Designed and developed a comprehensive Kitchen Display System to streamline restaurant operations. Led the UI/UX design and contributed to frontend development using .NET 8.',
-      role: 'Designer & Frontend Developer',
-      tags: ['UI Design', '.NET 8', 'Frontend Development','Cross-Function Team Collaboration'],
+        'Designed and developed a comprehensive Kitchen Display System to streamline restaurant operations. Led the UI/UX design and contributed to front-end development using .NET 8.',
+      role: 'Designer & Front-end Developer',
+      tags: ['UI Design', '.NET 8', 'Front-end Development','Cross-Function Team Collaboration'],
       link: '/case-study/kds',
       accentColor: 'orange',
       images: [kdsProjectImage],
