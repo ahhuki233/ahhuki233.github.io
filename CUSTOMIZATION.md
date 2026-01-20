@@ -147,7 +147,7 @@ Update CSS variables at the top:
 
   /* Text colors */
   --color-text: #1a1a1a;
-  --color-text-light: #666666;
+  --color-text-light: #4f4e4eff;
 }
 ```
 
