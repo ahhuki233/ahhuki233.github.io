@@ -92,6 +92,9 @@ const CaseStudyYumGo = () => {
       <section className="case-study-section at-a-glance">
         <div className="container">
           <h2 className="section-heading">At a Glance</h2>
+          <p className="section-intro">
+            The following insights are grounded in user research conducted throughout the project.
+          </p>
 
           <div className="glance-grid">
             <div className="glance-item">
