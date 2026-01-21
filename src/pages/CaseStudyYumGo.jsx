@@ -46,6 +46,10 @@ const CaseStudyYumGo = () => {
             </div>
 
             <dl className="project-meta" aria-label="Project information">
+               <div className="meta-item">
+                <dt className="meta-label">User</dt>
+                <dd className="meta-value">International Foodie Tourists</dd>
+              </div>
               <div className="meta-item">
                 <dt className="meta-label">Type</dt>
                 <dd className="meta-value">Student Project at UofT</dd>
@@ -56,7 +60,7 @@ const CaseStudyYumGo = () => {
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Team</dt>
-                <dd className="meta-value">Keyan Huang, Talor Fergusson, Zifan (Merlin) Ye</dd>
+                <dd className="meta-value">Keyan Huang, Taylor Fergusson, Zifan (Merlin) Ye</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
