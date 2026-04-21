@@ -23,6 +23,25 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.footer-accessibility-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--transition-speed) var(--transition-easing);
+}
+
+.footer-accessibility-link:hover,
+.footer-accessibility-link:focus {
+  color: var(--color-secondary);
+}
+
+.footer-accessibility-link:focus-visible {
+  outline: 2px solid var(--color-accent-purple);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .footer-copyright {
   font-size: var(--font-size-small);
   color: rgba(255, 255, 255, 0.7);

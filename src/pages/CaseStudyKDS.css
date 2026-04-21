@@ -49,6 +49,29 @@
   font-weight: 600;
 }
 
+/* Inline Links */
+.inline-link {
+  color: var(--color-accent-purple-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
+  transition: color var(--transition-speed) var(--transition-easing),
+              text-decoration-color var(--transition-speed) var(--transition-easing);
+}
+
+.inline-link:hover,
+.inline-link:focus {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+.inline-link:focus-visible {
+  outline: 2px solid var(--color-accent-purple);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 /* Hero Section */
 .case-study-hero {
   padding: var(--spacing-xl) 0;

@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
 import CaseStudyYumGo from './pages/CaseStudyYumGo'
 import CaseStudyKDS from './pages/CaseStudyKDS'
+import Accessibility from './pages/Accessibility'
 import './App.css'
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/case-study/yumgo" element={<CaseStudyYumGo />} />
           <Route path="/case-study/kds" element={<CaseStudyKDS />} />
+          <Route path="/accessibility" element={<Accessibility />} />
         </Routes>
       </main>
       <Footer />

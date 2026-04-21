@@ -499,7 +499,7 @@ const CaseStudyKDS = () => {
                 <div className="">
                   <h4 className="method-title">Component Architecture</h4>
                   <p className="method-description">
-                    I extensively used Fluent UI components to build consistent and accessible interfaces for order cards, station views, and control panels. Leveraging Fluent UI helped ensure visual clarity, interaction consistency, and fast comprehension, allowing staff to quickly understand order status without unnecessary interaction.
+                    I extensively used <a href="https://developer.microsoft.com/en-us/fluentui#/" target="_blank" rel="noopener noreferrer" className="inline-link">Fluent UI</a> components to build consistent and accessible interfaces for order cards, station views, and control panels. Leveraging Fluent UI helped ensure visual clarity, interaction consistency, and fast comprehension, allowing staff to quickly understand order status without unnecessary interaction.
                   </p>
                 </div>
               </div>
@@ -676,7 +676,7 @@ const CaseStudyKDS = () => {
                   <strong>.NET 8:</strong> Developed front-end components and implemented real-time features using the latest .NET framework.
                 </li>
                 <li>
-                  <strong>FluentUI Library:</strong> Leveraged Microsoft's FluentUI component library to build consistent user interfaces.
+                  <strong>FluentUI Library:</strong> Leveraged <a href="https://developer.microsoft.com/en-us/fluentui#/" target="_blank" rel="noopener noreferrer" className="inline-link">Microsoft's FluentUI component library</a> to build consistent user interfaces.
                 </li>
                 <li>
                   <strong>Figma Prototyping:</strong> Created interactive prototypes for stakeholder presentations.

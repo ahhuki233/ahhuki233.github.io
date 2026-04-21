@@ -1,0 +1,223 @@
+.accessibility-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.accessibility-hero {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-background-alt);
+}
+
+.accessibility-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.accessibility-intro {
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0;
+  max-width: 800px;
+}
+
+/* Section Styling */
+.accessibility-section {
+  padding: var(--spacing-xl) 0;
+  min-height: 0 !important;
+}
+
+.accessibility-section:nth-child(odd) {
+  background-color: var(--color-background-alt);
+}
+
+.accessibility-section .section-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: left;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.section-text {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0;
+}
+
+.section-text strong {
+  color: var(--color-primary);
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.feature-item {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-left: 4px solid var(--color-accent-purple);
+  transition: transform var(--transition-speed) var(--transition-easing);
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+}
+
+.feature-title {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.feature-item code {
+  background-color: var(--color-background-alt);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: var(--font-size-small);
+  color: var(--color-accent-purple-dark);
+  border: 1px solid #e5e7eb;
+}
+
+/* Links */
+.accessibility-link {
+  color: var(--color-accent-purple-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
+  transition: color var(--transition-speed) var(--transition-easing);
+}
+
+.accessibility-link:hover,
+.accessibility-link:focus {
+  color: var(--color-primary);
+}
+
+.accessibility-link:focus-visible {
+  outline: 2px solid var(--color-accent-purple);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Last Updated */
+.last-updated {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  margin: var(--spacing-lg) 0 0 0;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays for feature items */
+.feature-item:nth-child(1) { transition-delay: 0.05s; }
+.feature-item:nth-child(2) { transition-delay: 0.1s; }
+.feature-item:nth-child(3) { transition-delay: 0.15s; }
+.feature-item:nth-child(4) { transition-delay: 0.2s; }
+.feature-item:nth-child(5) { transition-delay: 0.25s; }
+.feature-item:nth-child(6) { transition-delay: 0.3s; }
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .accessibility-page {
+    padding-top: 70px;
+  }
+
+  .accessibility-hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .accessibility-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .accessibility-intro {
+    font-size: var(--font-size-large);
+  }
+
+  .accessibility-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .accessibility-section .section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .feature-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .feature-title {
+    font-size: var(--font-size-base);
+  }
+
+  .feature-item p {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (max-width: 480px) {
+  .accessibility-page {
+    padding-top: 60px;
+  }
+
+  .accessibility-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .accessibility-intro {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .feature-item {
+    transition: none;
+  }
+
+  .feature-item:hover {
+    transform: none;
+  }
+}

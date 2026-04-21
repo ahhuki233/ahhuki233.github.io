@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-info">
             <p className="footer-text">
-              Designed & coded with accessibility in mind
+              Designed & coded with <Link to="/accessibility" className="footer-accessibility-link">accessibility</Link> in mind
             </p>
             <p className="footer-copyright">
               © {currentYear} Xueer (Yuki) Xu. All rights reserved.

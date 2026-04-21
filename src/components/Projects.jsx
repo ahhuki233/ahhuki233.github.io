@@ -14,7 +14,7 @@ const Projects = () => {
       description:
         'A user-centered restaurant discovery and booking app built on familiar map-based interactions. Student project focused on intuitive navigation and seamless booking experience.',
       role: 'UX Researcher & Designer',
-      tags: ['UX Research', 'Mobile Design', 'User Testing','Leadership'],
+      tags: ['Figma','UX Research', 'Mobile Design', 'User Testing','Leadership'],
       link: '/case-study/yumgo',
       accentColor: 'purple',
       images: [yumgoImage1, yumgoImage2, yumgoImage3],
@@ -25,7 +25,7 @@ const Projects = () => {
       description:
         'Designed and developed a comprehensive Kitchen Display System to streamline restaurant operations. Led the UI/UX design and contributed to front-end development using .NET 8.',
       role: 'Designer & Front-end Developer',
-      tags: ['UI Design', '.NET 8', 'Front-end Development','Cross-Function Team Collaboration'],
+      tags: ['Figma', 'UI Design', '.NET 8', 'Front-end Development','Cross-Function Team Collaboration'],
       link: '/case-study/kds',
       accentColor: 'orange',
       images: [kdsProjectImage],
