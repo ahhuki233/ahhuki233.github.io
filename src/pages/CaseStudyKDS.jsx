@@ -49,12 +49,12 @@ const CaseStudyKDS = () => {
                 <dd className="meta-value">9 Months (Jan-Oct 2025)</dd>
               </div>
               <div className="meta-item">
-                <dt className="meta-label">Team</dt>
-                <dd className="meta-value">Client Team (Panasonic), Management Team, Front-end & Back-end Developers</dd>
-              </div>
-              <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
                 <dd className="meta-value">Lead Designer & Front-end Developer</dd>
+              </div>
+              <div className="meta-item">
+                <dt className="meta-label">Team</dt>
+                <dd className="meta-value">Client Team (Panasonic), Management Team, Front-end & Back-end Developers</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Technologies</dt>

@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import './Projects.css'
 import ImageSlideshow from './ImageSlideshow'
 import kdsProjectImage from '../assets/images/kds-project-image.png'
+import weathercanImage from '../assets/images/weathercan-home-page.png'
+import selfAssessmentImage from '../assets/images/self-assessment-portal.png'
 import yumgoImage1 from '../assets/images/yumgo-project-image-1.png'
 import yumgoImage2 from '../assets/images/yumgo-project-image-2.png'
 import yumgoImage3 from '../assets/images/yumgo-project-image-3.png'
@@ -10,9 +12,9 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'YumGo: Restaurant Discovery & Booking',
+      title: 'YumGo: Restaurant Discovery and Booking',
       description:
-        'A user-centered restaurant discovery and booking app built on familiar map-based interactions. Student project focused on intuitive navigation and seamless booking experience.',
+        'Designed a user-centered restaurant discovery and booking app built on familiar map-based interactions. Student group project focused on intuitive navigation and seamless booking experience.',
       role: 'UX Researcher & Designer',
       tags: ['Figma','UX Research', 'Mobile Design', 'User Testing','Leadership'],
       link: '/case-study/yumgo',
@@ -30,26 +32,33 @@ const Projects = () => {
       accentColor: 'orange',
       images: [kdsProjectImage],
     },
-    // {
-    //   id: 3,
-    //   title: 'Mobile Banking App',
-    //   description:
-    //     'Created a user-centered mobile banking experience with focus on security and ease of use for all age groups.',
-    //   role: 'UX/UI Designer',
-    //   tags: ['Mobile Design', 'User Testing', 'Figma'],
-    //   link: '#',
-    //   accentColor: 'green',
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Design System',
-    //   description:
-    //     'Built a comprehensive design system and component library to streamline product development across teams.',
-    //   role: 'Design Systems Lead',
-    //   tags: ['Design Systems', 'React', 'Documentation'],
-    //   link: '#',
-    //   accentColor: 'purple',
-    // },
+    {
+      id: 3,
+      //title: 'ECCC’s weather services (WeatherCAN and weather.gc.ca)',
+      title: 'WeatherCAN and weather.gc.ca',
+      description:
+        'Helped modernize the forecast and alert features of WeatherCAN, a weather app for Canadians. The focus was accurate local forecasts and a clean, accessible interface built for Canada’s climate and geography.',
+      role: 'UX Designer',
+      tags: ['UX Research', 'Mobile Design', 'Data Visualization', 'Accessibility'],
+      link: '#',
+      accentColor: 'orange',
+      images: [weathercanImage],
+      imageCover: true,
+      inProgress: true,
+    },
+    {
+      id: 4,
+      title: 'Service Review Self-Assessment Portal',
+      description:
+        'Designed and developed a self-assessment portal enabling the Service Review Team to conduct service reviews for both internal and external services at Enviornment and Climate Change Canada (ECCC).',
+      role: 'UX Researcher, Designer & Developer',
+      tags: ['UX Research', 'Information Architecture', 'Service Design', 'Power Apps Canvas Development', 'User Testing'],
+      link: '#',
+      accentColor: 'orange',
+      images: [selfAssessmentImage],
+      imageBg: '#ffffff',
+      inProgress: true,
+    },
   ]
 
   return (
@@ -66,21 +75,26 @@ const Projects = () => {
           {projects.map((project) => (
             <article
               key={project.id}
-              className={`project-card card accent-${project.accentColor}`}
+              className={`project-card card accent-${project.accentColor}${project.inProgress ? ' project-card-in-progress' : ''}`}
               role="article"
               aria-labelledby={`project-title-${project.id}`}
             >
               <div className="project-image" aria-hidden="true">
                 {project.images && project.images.length > 0 ? (
-                  <div className={`project-images-grid project-images-${project.accentColor}`}>
+                  <div className={`project-images-grid project-images-${project.accentColor}`} style={project.imageBg ? { backgroundColor: project.imageBg } : undefined}>
                     {/* Desktop: Grid view */}
                     <div className="project-images-grid-view">
                       {project.images.map((image, index) => (
-                        <div key={index} className="project-image-wrapper">
+                        <div
+                          key={index}
+                          className="project-image-wrapper"
+                          style={project.imageCover ? { aspectRatio: '1194/834', overflow: 'hidden' } : undefined}
+                        >
                           <img
                             src={image}
                             alt={`${project.title} preview ${index + 1}`}
                             className="project-image-img"
+                            style={project.imageCover ? { objectFit: 'cover', objectPosition: 'top', height: '100%' } : undefined}
                           />
                         </div>
                       ))}
@@ -105,6 +119,11 @@ const Projects = () => {
                 )}
               </div>
               <div className="project-content">
+                {project.inProgress && (
+                  <span className="project-badge project-badge-in-progress" aria-label="Project in progress">
+                    In Progress
+                  </span>
+                )}
                 <h3 id={`project-title-${project.id}`} className="project-title">{project.title}</h3>
                 <p className="project-role">{project.role}</p>
                 <p className="project-description">{project.description}</p>
@@ -117,7 +136,11 @@ const Projects = () => {
                   ))}
                 </ul>
 
-                {project.link.startsWith('/') ? (
+                {project.inProgress && project.link === '#' ? (
+                  <span className="project-link-coming-soon" aria-label="Case study coming soon">
+                    Case study coming soon
+                  </span>
+                ) : project.link.startsWith('/') ? (
                   <Link
                     to={project.link}
                     className="project-link underline-animation"

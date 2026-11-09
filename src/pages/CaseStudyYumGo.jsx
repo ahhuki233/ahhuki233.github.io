@@ -59,12 +59,12 @@ const CaseStudyYumGo = () => {
                 <dd className="meta-value">12 Weeks (Sept-Dec 2025)</dd>
               </div>
               <div className="meta-item">
-                <dt className="meta-label">Team</dt>
-                <dd className="meta-value">Keyan Huang, Taylor Fergusson, Zifan (Merlin) Ye</dd>
-              </div>
-              <div className="meta-item">
                 <dt className="meta-label">My Role</dt>
                 <dd className="meta-value">UX Researcher & Designer</dd>
+              </div>
+              <div className="meta-item">
+                <dt className="meta-label">Team</dt>
+                <dd className="meta-value">Keyan Huang, Taylor Fergusson, Zifan (Merlin) Ye</dd>
               </div>
               <div className="meta-item">
                 <dt className="meta-label">Methods</dt>
