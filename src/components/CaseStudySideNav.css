@@ -1,0 +1,94 @@
+.cs-side-nav {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cs-side-nav--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cs-side-nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-side-nav__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  text-align: left;
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+  min-height: 44px; /* WCAG touch target minimum */
+}
+
+.cs-side-nav__btn:hover,
+.cs-side-nav__btn--active {
+  color: var(--color-primary);
+}
+
+.cs-side-nav__btn:focus-visible {
+  outline: 2px solid var(--color-accent-purple-dark);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.cs-side-nav__dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.3;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cs-side-nav__btn--active .cs-side-nav__dot {
+  opacity: 1;
+  transform: scale(1.4);
+  background-color: var(--color-accent-purple-dark);
+}
+
+.cs-side-nav__btn:hover .cs-side-nav__dot {
+  opacity: 0.65;
+}
+
+.cs-side-nav__label {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  max-width: 100px;
+  white-space: normal;
+  color: var(--color-text-light);
+  transition: color 0.2s ease, font-weight 0.1s ease;
+}
+
+/* Active label bold and full opacity */
+.cs-side-nav__btn--active .cs-side-nav__label {
+  opacity: 1;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Only show on viewports wide enough to have space beside the content */
+@media (max-width: 1440px) {
+  .cs-side-nav {
+    display: none;
+  }
+}

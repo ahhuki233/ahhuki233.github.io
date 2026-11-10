@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CaseStudyKDS.css'
+import CaseStudySideNav from '../components/CaseStudySideNav'
 import ImageSlideshow from '../components/ImageSlideshow'
 import kdsExpoStation from '../assets/images/kds-expo-station.png'
 import kdsPickupStation from '../assets/images/kds-pickup-station.png'
@@ -15,8 +16,19 @@ const CaseStudyKDS = () => {
     window.scrollTo(0, 0)
   }, [])
 
+  const sections = [
+    { id: 'at-a-glance',    label: 'At a Glance' },
+    { id: 'key-features',   label: 'Key Features' },
+    { id: 'discover',       label: 'Discover' },
+    { id: 'define',         label: 'Key Insights' },
+    { id: 'design-process', label: 'Design Process' },
+    { id: 'development',    label: 'Development' },
+    { id: 'learnings',      label: 'Key Learnings' },
+  ]
+
   return (
     <div className="case-study">
+      <CaseStudySideNav sections={sections} />
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb" aria-label="Breadcrumb">
         <div className="container">
@@ -77,7 +89,7 @@ const CaseStudyKDS = () => {
       </section>
 
       {/* At a Glance */}
-      <section className="case-study-section at-a-glance">
+      <section id="at-a-glance" className="case-study-section at-a-glance">
         <div className="container">
           <h2 className="section-heading">At a Glance</h2>
 
@@ -107,7 +119,7 @@ const CaseStudyKDS = () => {
       </section>
 
       {/* Key Features */}
-      <section className="case-study-section solution-details">
+      <section id="key-features" className="case-study-section solution-details">
         <div className="container">
           <h2 className="section-heading">Key Solution Features</h2>
           <p className="section-intro">
@@ -274,7 +286,7 @@ const CaseStudyKDS = () => {
       </section>
 
       {/* Research Process */}
-      <section className="case-study-section research-process">
+      <section id="discover" className="case-study-section research-process">
         <div className="container">
           <h2 className="section-heading">Discover: Understanding the Problem</h2>
 
@@ -333,7 +345,7 @@ const CaseStudyKDS = () => {
       </section> */}
 
       {/* Key Insights */}
-      <section className="case-study-section key-insights">
+      <section id="define" className="case-study-section key-insights">
         <div className="container">
           <h2 className="section-heading">Define: Key Research Insights</h2>
 
@@ -394,7 +406,7 @@ const CaseStudyKDS = () => {
       </section> 
 
       {/* Design Process */}
-   <section className="case-study-section design-process">
+   <section id="design-process" className="case-study-section design-process">
         <div className="container">
           <h2 className="section-heading">Design Process</h2>
 
@@ -484,7 +496,7 @@ const CaseStudyKDS = () => {
       </section> 
 
       {/* Development Section */}
-     <section className="case-study-section development">
+     <section id="development" className="case-study-section development">
         <div className="container">
           <h2 className="section-heading">Development & Implementation</h2>
 
@@ -646,7 +658,7 @@ const CaseStudyKDS = () => {
       </section> */}
 
       {/* Learnings & Reflection */}
-       <section className="case-study-section learnings">
+       <section id="learnings" className="case-study-section learnings">
         <div className="container">
           <h2 className="section-heading">Key Learnings</h2>
 

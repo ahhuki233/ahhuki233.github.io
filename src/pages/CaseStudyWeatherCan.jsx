@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CaseStudyWeatherCan.css'
+import CaseStudySideNav from '../components/CaseStudySideNav'
 import weathercanFirstBeta from '../assets/images/weathercan-first-beta.png'
 import weathercanRevisedDesign from '../assets/images/weathercan-revised-design.png'
 import weathercanSecondBeta from '../assets/images/weathercan-second-beta.png'
@@ -11,8 +12,19 @@ const CaseStudyWeatherCan = () => {
     window.scrollTo(0, 0)
   }, [])
 
+  const sections = [
+    { id: 'at-a-glance',      label: 'At a Glance' },
+    { id: 'background',       label: 'Background' },
+    { id: 'first-beta',       label: 'First Beta' },
+    { id: 'feedback',         label: 'User Feedback' },
+    { id: 'design-response',  label: 'Design Response' },
+    { id: 'weather-story',    label: 'Weather Story' },
+    { id: 'next-steps',       label: 'Next Steps' },
+  ]
+
   return (
     <div className="case-study case-study-weathercan">
+      <CaseStudySideNav sections={sections} />
       {/* Breadcrumb */}
       <nav className="breadcrumb" aria-label="Breadcrumb">
         <div className="container">
@@ -67,7 +79,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* At a Glance */}
-      <section className="case-study-section at-a-glance">
+      <section id="at-a-glance" className="case-study-section at-a-glance">
         <div className="container">
           <h2 className="section-heading">At a Glance</h2>
           <div className="glance-grid">
@@ -94,7 +106,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* Background */}
-      <section className="case-study-section wc-bg-section">
+      <section id="background" className="case-study-section wc-bg-section">
         <div className="container">
           <h2 className="section-heading">Background</h2>
           <p className="section-intro">
@@ -120,7 +132,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* First Beta */}
-      <section className="case-study-section">
+      <section id="first-beta" className="case-study-section">
         <div className="container">
           <h2 className="section-heading">First Beta</h2>
           <p className="section-intro">
@@ -138,7 +150,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* User & Client Feedback */}
-      <section className="case-study-section wc-feedback-section">
+      <section id="feedback" className="case-study-section wc-feedback-section">
         <div className="container">
           <h2 className="section-heading">User &amp; Client Feedback</h2>
           <p className="section-intro">
@@ -178,7 +190,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* Design Response */}
-      <section className="case-study-section">
+      <section id="design-response" className="case-study-section">
         <div className="container">
           <h2 className="section-heading">Design Response</h2>
           <p className="section-intro">
@@ -231,7 +243,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* New Feature: Weather Story */}
-      <section className="case-study-section wc-feature-section">
+      <section id="weather-story" className="case-study-section wc-feature-section">
         <div className="container">
           <h2 className="section-heading">New Feature: Weather Story</h2>
           <div className="wc-two-col">
@@ -259,7 +271,7 @@ const CaseStudyWeatherCan = () => {
       </section>
 
       {/* Next Steps */}
-      <section className="case-study-section">
+      <section id="next-steps" className="case-study-section">
         <div className="container">
           <h2 className="section-heading">Next Steps</h2>
           <p className="section-intro">

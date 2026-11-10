@@ -19,6 +19,11 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
     { to: '/about', label: 'About' },
   ]
 
+  const contactLink = {
+    href: 'mailto:xueeryuki.xu@mail.utoronto.ca',
+    label: 'Contact'
+  }
+
   const resumeLink = {
     href: 'https://drive.google.com/file/d/17i3Bo0CGX_zb3zAGTESeX5qL5ccMN2jF/view?usp=sharing',
     label: 'Resume'
@@ -88,6 +93,15 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
               </Link>
             </li>
           ))}
+          <li key={contactLink.label}>
+            <a
+              href={contactLink.href}
+              className="nav-link underline-animation"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {contactLink.label}
+            </a>
+          </li>
           <li key={resumeLink.label}>
             <a
               href={resumeLink.href}

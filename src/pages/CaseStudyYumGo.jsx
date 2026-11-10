@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './CaseStudyYumGo.css'
+import CaseStudySideNav from '../components/CaseStudySideNav'
 import ImageSlideshow from '../components/ImageSlideshow'
 import yumgoProjectImage1 from '../assets/images/yumgo-project-image-1.png'
 import yumgoProjectImage2 from '../assets/images/yumgo-project-image-2.png'
@@ -21,8 +22,19 @@ const CaseStudyYumGo = () => {
     window.scrollTo(0, 0)
   }, [])
 
+  const sections = [
+    { id: 'at-a-glance',  label: 'At a Glance' },
+    { id: 'key-screens',  label: 'Key Screens' },
+    { id: 'discover',     label: 'Discover' },
+    { id: 'define',       label: 'Define' },
+    { id: 'design-test',  label: 'Design & Test' },
+    { id: 'results',      label: 'Results' },
+    { id: 'learnings',    label: 'Key Learnings' },
+  ]
+
   return (
     <div className="case-study">
+      <CaseStudySideNav sections={sections} />
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb" aria-label="Breadcrumb">
         <div className="container">
@@ -89,7 +101,7 @@ const CaseStudyYumGo = () => {
       </section>
 
       {/* At a Glance */}
-      <section className="case-study-section at-a-glance">
+      <section id="at-a-glance" className="case-study-section at-a-glance">
         <div className="container">
           <h2 className="section-heading">At a Glance</h2>
           <p className="section-intro">
@@ -120,7 +132,7 @@ const CaseStudyYumGo = () => {
           </div>
         </div>
       </section>
-        <section className="case-study-section solution-details">
+        <section id="key-screens" className="case-study-section solution-details">
         <div className="container">
           <h2 className="section-heading">Key Screens</h2>
           <p className="section-intro">
@@ -345,7 +357,7 @@ const CaseStudyYumGo = () => {
       </section>
 
       {/* Research Process */}
-      <section className="case-study-section research-process">
+      <section id="discover" className="case-study-section research-process">
         <div className="container">
           <h2 className="section-heading">Discover: Understanding the Problem</h2>
 
@@ -404,7 +416,7 @@ const CaseStudyYumGo = () => {
       </section>
 
       {/* Key Insights */}
-      <section className="case-study-section key-insights">
+      <section id="define" className="case-study-section key-insights">
         <div className="container">
           <h2 className="section-heading">Define: Insights & User Understanding</h2>
  <h3 className="content-title">Key Research Insights</h3>
@@ -568,7 +580,7 @@ const CaseStudyYumGo = () => {
    
 
       {/* Develop & Test */}
-      <section className="case-study-section development">
+      <section id="design-test" className="case-study-section development">
         <div className="container">
           <h2 className="section-heading">Design & Test: Iterative Testing & Adaptation</h2>
 
@@ -662,7 +674,7 @@ const CaseStudyYumGo = () => {
       </section>
 
       {/* Results & Impact */}
-      <section className="case-study-section results">
+      <section id="results" className="case-study-section results">
         <div className="container">
           <h2 className="section-heading">Results & Reflection</h2>
 
@@ -691,7 +703,7 @@ const CaseStudyYumGo = () => {
       </section>
 
       {/* Learnings & Reflection */}
-      <section className="case-study-section learnings">
+      <section id="learnings" className="case-study-section learnings">
         <div className="container">
           <h2 className="section-heading">Key Learnings & Next Steps</h2>
 

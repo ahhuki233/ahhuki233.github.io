@@ -11,17 +11,6 @@ import yumgoImage3 from '../assets/images/yumgo-project-image-3.png'
 const Projects = () => {
   const projects = [
     {
-      id: 1,
-      title: 'YumGo: Restaurant Discovery and Booking',
-      description:
-        'Designed a user-centered restaurant discovery and booking app built on familiar map-based interactions. Student group project focused on intuitive navigation and seamless booking experience.',
-      role: 'UX Researcher & Designer',
-      tags: ['Figma','UX Research', 'Mobile Design', 'User Testing','Leadership'],
-      link: '/case-study/yumgo',
-      accentColor: 'purple',
-      images: [yumgoImage1, yumgoImage2, yumgoImage3],
-    },
-    {
       id: 2,
       title: 'Kitchen Display System',
       description:
@@ -31,6 +20,17 @@ const Projects = () => {
       link: '/case-study/kds',
       accentColor: 'orange',
       images: [kdsProjectImage],
+    },
+    {
+      id: 1,
+      title: 'YumGo: Restaurant Discovery and Booking',
+      description:
+        'Designed a user-centered restaurant discovery and booking app built on familiar map-based interactions. Student group project focused on intuitive navigation and seamless booking experience.',
+      role: 'UX Researcher & Designer',
+      tags: ['Figma','UX Research', 'Mobile Design', 'User Testing','Leadership'],
+      link: '/case-study/yumgo',
+      accentColor: 'purple',
+      images: [yumgoImage1, yumgoImage2, yumgoImage3],
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Projects = () => {
       link: '#',
       accentColor: 'orange',
       images: [weathercanImage],
-      imageCover: true,
+      imageContain: true,
       inProgress: true,
     },
     {
@@ -81,20 +81,26 @@ const Projects = () => {
             >
               <div className="project-image" aria-hidden="true">
                 {project.images && project.images.length > 0 ? (
-                  <div className={`project-images-grid project-images-${project.accentColor}`} style={project.imageBg ? { backgroundColor: project.imageBg } : undefined}>
+                  <div className={`project-images-grid project-images-${project.accentColor}`} style={project.imageBg ? { backgroundColor: project.imageBg } : project.imageContain ? { backgroundColor: '#ffffff' } : undefined}>
                     {/* Desktop: Grid view */}
                     <div className="project-images-grid-view">
                       {project.images.map((image, index) => (
                         <div
                           key={index}
                           className="project-image-wrapper"
-                          style={project.imageCover ? { aspectRatio: '1194/834', overflow: 'hidden' } : undefined}
+                          style={project.imageCover || project.imageContain ? { aspectRatio: '1194/834', overflow: 'hidden' } : undefined}
                         >
                           <img
                             src={image}
                             alt={`${project.title} preview ${index + 1}`}
                             className="project-image-img"
-                            style={project.imageCover ? { objectFit: 'cover', objectPosition: 'top', height: '100%' } : undefined}
+                            style={
+                              project.imageCover
+                                ? { objectFit: 'cover', objectPosition: 'top', height: '100%' }
+                                : project.imageContain
+                                ? { objectFit: 'contain', height: '100%', width: '100%' }
+                                : undefined
+                            }
                           />
                         </div>
                       ))}
